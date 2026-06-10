@@ -11,6 +11,15 @@ const proofPillars = [
   "Builder & Operator Experience",
 ];
 
+const industryPresence = [
+  "AFCEA Hawaii",
+  "AFCEA West",
+  "Tech Field Day",
+  "Progress Customer Events",
+  "Industry Conferences",
+  "Trade Show Engagement",
+];
+
 const careerArc = [
   {
     title: "Technical Support Leadership",
@@ -38,19 +47,19 @@ const careerArc = [
       "Security modernization",
     ],
   },
-  {
-    title: "Builder & Operator",
-    description:
-      "Applied decades of customer, technical, and operational experience to building businesses, digital experiences, and guided decision systems designed to simplify complex workflows and improve customer outcomes.",
-    highlights: [
-      "Gallivanting Travel",
-      "SALARA Guided Intelligence",
-      "Mrs. Clean transformation",
-      "AI-assisted workflows",
-      "Product strategy",
-      "Guided decision architecture",
-    ],
-  },
+{
+  title: "Builder & Operator",
+  description:
+    "Applied decades of customer, technical, and operational experience to building businesses, digital experiences, and guided decision systems designed to simplify complex workflows and improve customer outcomes.",
+  highlights: [
+    "Gallivanting Travel",
+    "Guided Intelligence Platform Design",
+    "Mrs. Clean transformation",
+    "AI-assisted workflows",
+    "Product strategy",
+    "Guided decision architecture",
+  ],
+},
 ];
 
 const featuredEvidence = [
@@ -91,13 +100,14 @@ export default function PortfolioPage() {
         <h1 className="text-5xl font-bold tracking-tight">Mark A. Singh</h1>
 
         <p className="mt-4 text-xl text-slate-300">
-          Solutions Engineer • Technical Advisor • Product Educator • Builder
+          Technical Advisor • Solutions Engineer • Product Educator • Operator
         </p>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-          Public evidence of customer-facing technical leadership, product
-          education, industry presence, and builder/operator experience.
-        </p>
+<p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+  Public evidence of customer-facing technical leadership, product
+  collaboration, industry engagement, and operational execution
+  accumulated across more than 25 years in technology.
+</p>
       </section>
 
       <section className="mx-auto mt-12 max-w-5xl">
@@ -181,6 +191,35 @@ export default function PortfolioPage() {
           ))}
         </div>
       </section>
+
+<section className="mx-auto mt-16 max-w-5xl">
+  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+    Industry Presence
+  </p>
+
+  <h2 className="text-3xl font-semibold">Field Experience in Action</h2>
+
+  <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
+    Conferences, trade shows, customer events, analyst engagements, and
+    field representation across enterprise, public sector, and technology
+    communities.
+  </p>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-3">
+    {industryPresence.map((item) => (
+      <article
+        key={item}
+        className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
+      >
+        <div className="mb-5 flex h-36 items-center justify-center rounded-xl border border-dashed border-cyan-300/30 bg-cyan-300/5 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+          Image
+        </div>
+
+        <h3 className="text-xl font-semibold">{item}</h3>
+      </article>
+    ))}
+  </div>
+</section>
 
       <section className="mx-auto mt-16 max-w-5xl rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-8">
         <h2 className="text-2xl font-semibold">Why This Portfolio Exists</h2>
