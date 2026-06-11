@@ -1,5 +1,6 @@
-import { industryPresence } from "../data/industryPresence";
+import Image from "next/image";
 
+import { industryPresence } from "../data/industryPresence";
 import { webinars } from "../data/webinars";
 import { events } from "../data/events";
 import { projects } from "../data/projects";
@@ -12,7 +13,6 @@ const proofPillars = [
   "Industry & Field Presence",
   "Builder & Operator Experience",
 ];
-
 
 const careerArc = [
   {
@@ -41,19 +41,19 @@ const careerArc = [
       "Security modernization",
     ],
   },
-{
-  title: "Builder & Operator",
-  description:
-    "Applied decades of customer, technical, and operational experience to building businesses, digital experiences, and guided decision systems designed to simplify complex workflows and improve customer outcomes.",
-  highlights: [
-    "Gallivanting Travel",
-    "Guided Intelligence Platform Design",
-    "Mrs. Clean transformation",
-    "AI-assisted workflows",
-    "Product strategy",
-    "Guided decision architecture",
-  ],
-},
+  {
+    title: "Builder & Operator",
+    description:
+      "Applied decades of customer, technical, and operational experience to building businesses, digital experiences, and guided decision systems designed to simplify complex workflows and improve customer outcomes.",
+    highlights: [
+      "Gallivanting Travel",
+      "Guided Intelligence Platform Design",
+      "Mrs. Clean transformation",
+      "AI-assisted workflows",
+      "Product strategy",
+      "Guided decision architecture",
+    ],
+  },
 ];
 
 const featuredEvidence = [
@@ -97,11 +97,11 @@ export default function PortfolioPage() {
           Technical Advisor • Solutions Engineer • Product Educator • Operator
         </p>
 
-<p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-  Public evidence of customer-facing technical leadership, product
-  collaboration, industry engagement, and operational execution
-  accumulated across more than 25 years in technology.
-</p>
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+          Public evidence of customer-facing technical leadership, product
+          collaboration, industry engagement, and operational execution
+          accumulated across more than 25 years in technology.
+        </p>
       </section>
 
       <section className="mx-auto mt-12 max-w-5xl">
@@ -186,39 +186,47 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-<section className="mx-auto mt-16 max-w-5xl">
-  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-    Industry Presence
-  </p>
+      <section className="mx-auto mt-16 max-w-5xl">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          Industry Presence
+        </p>
 
-  <h2 className="text-3xl font-semibold">Field Experience in Action</h2>
+        <h2 className="text-3xl font-semibold">Field Experience in Action</h2>
 
-  <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-    Conferences, trade shows, customer events, analyst engagements, and
-    field representation across enterprise, public sector, and technology
-    communities.
-  </p>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
+          Conferences, trade shows, customer events, analyst engagements, and
+          field representation across enterprise, public sector, and technology
+          communities.
+        </p>
 
-  <div className="mt-8 grid gap-6 md:grid-cols-3">
-{industryPresence.map((item) => (
-        <article
-        key={item.title}
-        className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
-      >
-        <div className="mb-5 flex h-36 items-center justify-center rounded-xl border border-dashed border-cyan-300/30 bg-cyan-300/5 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-          Image
-        </div>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          {industryPresence.map((item) => (
+            <article
+              key={item.title}
+              className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl"
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={800}
+                height={520}
+                className="h-60 w-full object-cover"
+              style={{
+  objectPosition: item.imagePosition ?? "center",
+}}
+              />
 
-<div className="mb-3 flex items-center justify-between gap-4">
+              <div className="p-6">
+<div className="mb-3">
   <h3 className="text-xl font-semibold">{item.title}</h3>
-  <span className="text-sm text-slate-400">{item.year}</span>
 </div>
 
-<p className="leading-7 text-slate-300">{item.description}</p>
-      </article>
-    ))}
-  </div>
-</section>
+                <p className="leading-7 text-slate-300">{item.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="mx-auto mt-16 max-w-5xl rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-8">
         <h2 className="text-2xl font-semibold">Why This Portfolio Exists</h2>
@@ -233,30 +241,36 @@ export default function PortfolioPage() {
       </section>
 
       <section className="mx-auto mt-16 max-w-5xl">
-        <h2 className="text-2xl font-semibold">Evidence Library</h2>
+        <h2 className="text-2xl font-semibold">Evidence of Impact</h2>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           {evidenceItems.map((item) => (
-<article
-  key={item.title}
-  className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
->
-  <div className="mb-5 flex h-36 items-center justify-center rounded-xl border border-dashed border-cyan-300/30 bg-cyan-300/5 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-    Image Coming Soon
-  </div>
+            <article
+              key={item.title}
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
+            >
+              <div className="mb-4 flex items-center justify-between gap-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                  {item.category}
+                </p>
+                <p className="text-sm text-slate-400">{item.year}</p>
+              </div>
 
-  <div className="mb-3 flex items-center justify-between">
-    <h3 className="text-xl font-semibold">{item.title}</h3>
+              <h3 className="text-2xl font-semibold">{item.title}</h3>
 
-    <span className="text-sm text-slate-400">
-      {item.year}
-    </span>
-  </div>
+              <p className="mt-4 text-slate-300">{item.description}</p>
 
-  <p className="text-slate-300 leading-7">
-    {item.description}
-  </p>
-</article>
+              {item.url && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-flex rounded-full bg-cyan-300 px-5 py-2 text-sm font-semibold text-slate-950"
+                >
+                  View Evidence
+                </a>
+              )}
+            </article>
           ))}
         </div>
       </section>

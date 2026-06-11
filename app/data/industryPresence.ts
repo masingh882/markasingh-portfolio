@@ -1,49 +1,44 @@
 export const industryPresence = [
   {
     title: "AFCEA West",
-    year: "2022",
+    image: "/images/events/afcea-west-2022.jpg",
+    imagePosition: "center center",
     description:
       "Represented Progress at one of the premier defense and public sector technology conferences, engaging customers and discussing infrastructure, security, and modernization initiatives.",
-    image: "/images/events/afcea-west.jpg",
   },
-
   {
     title: "AFCEA Hawaii",
-    year: "2022",
+    image: "/images/events/afcea-hawaii-2022.jpg",
+    imagePosition: "center top",
     description:
       "Participated in defense and public sector technology discussions while representing Progress solutions and engaging customers on monitoring, security, and operational visibility challenges.",
-    image: "/images/events/afcea-hawaii.jpg",
   },
-
   {
     title: "Tech Field Day",
-    year: "2022",
-    description:
-      "Represented Progress WhatsUp Gold during analyst and practitioner discussions focused on infrastructure monitoring, observability, and operational intelligence.",
     image: "/images/events/tech-field-day.jpg",
+    imagePosition: "center center",
+    description:
+      "Delivered a public technical demonstration of WhatsUp Gold to industry analysts and practitioners, showcasing monitoring, observability, and operational intelligence capabilities.",
   },
-
   {
     title: "Progress Customer Events",
-    year: "2021-2022",
+    image: "/images/events/customer-event-stadium-venue.jpg",
+    imagePosition: "center center",
     description:
-      "Delivered customer-facing demonstrations, technical education sessions, workshops, and product discussions supporting enterprise and public sector customers.",
-    image: "/images/events/progress-customer-events.jpg",
+      "Delivered customer-facing demonstrations, technical education sessions, workshops, and product discussions supporting enterprise and public sector organizations.",
   },
-
   {
-    title: "Progress Booth Experience",
-    year: "2021-2022",
+    title: "Live Product Demonstrations",
+    image: "/images/events/progress-whatsup-demo.jpg",
+    imagePosition: "center top%",
     description:
-      "Represented the Progress portfolio including WhatsUp Gold, MOVEit, Kemp, and Flowmon through trade show engagement, product demonstrations, and customer conversations.",
-    image: "/images/events/progress-booth.jpg",
+      "Delivered live demonstrations of WhatsUp Gold network monitoring and observability capabilities while translating technical features into customer outcomes.",
   },
-
   {
-    title: "Conference & Trade Show Engagement",
-    year: "2021-2022",
+    title: "Trade Show Engagement",
+    image: "/images/events/event-chicago-customer-engagement.jpg",
+    imagePosition: "center center",
     description:
-      "Participated in conferences, trade shows, and industry events focused on customer engagement, technical education, solution positioning, and industry collaboration.",
-    image: "/images/events/trade-show-engagement.jpg",
+      "Engaged customers, partners, and practitioners on busy trade show floors through product conversations, booth activity, and field representation.",
   },
 ];
