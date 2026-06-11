@@ -585,7 +585,93 @@ export default function Home() {
             </p>
           </div>
         </section>
+        {/* Customer Engagements & Adoption */}
+        <section className="mt-24">
+  <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">
+    CUSTOMER ENGAGEMENT & ADOPTION
+  </p>
 
+  <h2 className="mt-4 text-4xl font-bold">
+    Technology Only Creates Value When People Use It
+  </h2>
+
+  <div className="mt-8 space-y-6 text-slate-300 leading-relaxed">
+    <p>
+      Throughout the early growth of enterprise web technologies,
+      organizations faced a challenge that was not purely technical.
+      They knew the internet would change how they operated, but many
+      struggled to understand how to adopt new platforms effectively.
+    </p>
+
+    <p>
+      During my years supporting and advising customers, I saw the same
+      pattern repeatedly. Success was rarely determined by whether a
+      technology worked. Success depended on whether people understood
+      how that technology fit into their environment, processes, and
+      business objectives.
+    </p>
+
+    <p>
+      Through customer workshops, demonstrations, training sessions,
+      conference engagements, and direct customer interactions, I helped
+      bridge the gap between technical capability and practical adoption.
+    </p>
+
+    <p>
+Looking back, those adoption challenges closely resemble what organizations face with AI today. The technology itself is rarely the biggest obstacle. The challenge is helping people understand where it fits, how it creates value, and how to confidently integrate it into existing workflows. Throughout my career, that bridge between capability and adoption has been a recurring theme.    </p>
+  </div>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-3">
+    <div className={cardClass}>
+      <h3 className="text-2xl font-semibold">
+        Customer Education
+      </h3>
+      <ul className="mt-4 space-y-2 text-slate-300">
+        <li>• Technical workshops</li>
+        <li>• Customer training sessions</li>
+        <li>• Product education programs</li>
+        <li>• Hands-on demonstrations</li>
+      </ul>
+    </div>
+
+    <div className={cardClass}>
+      <h3 className="text-2xl font-semibold">
+        Technology Adoption
+      </h3>
+      <ul className="mt-4 space-y-2 text-slate-300">
+        <li>• Platform onboarding</li>
+        <li>• Change management support</li>
+        <li>• Operational alignment</li>
+        <li>• User enablement</li>
+      </ul>
+    </div>
+
+    <div className={cardClass}>
+      <h3 className="text-2xl font-semibold">
+        Modern AI Parallel
+      </h3>
+      <ul className="mt-4 space-y-2 text-slate-300">
+        <li>• Ambiguity reduction</li>
+        <li>• Guided adoption</li>
+        <li>• Workflow integration</li>
+        <li>• Trust through clarity</li>
+      </ul>
+    </div>
+  </div>
+
+  <div className={calloutClass}>
+    <h3 className="text-2xl font-semibold">
+      Why This Matters
+    </h3>
+
+    <p className="mt-4 text-slate-300">
+      The adoption challenges organizations face with AI today are
+      remarkably similar to the adoption challenges businesses faced
+      during the growth of the web. My career has consistently centered
+      on helping organizations move from uncertainty to confident action.
+    </p>
+  </div>
+</section>
       </div>
     </main>
   );
