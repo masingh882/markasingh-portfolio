@@ -4,7 +4,7 @@ export const projects = [
     category: "Guided Intelligence Platform",
     year: "2026",
     description:
-      "Designed and built a structured guidance platform focused on reducing customer decision friction through orchestration, recommendation logic, and human-in-the-loop workflows.",
+      "Designed and built a Guided Intelligence platform that combines structured decision workflows, recommendation orchestration, and human expertise to reduce customer decision friction, improve lead quality, and guide customers toward confident next steps.",
     technologies: [
       "Next.js",
       "TypeScript",

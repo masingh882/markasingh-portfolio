@@ -30,7 +30,7 @@ export const industryPresence = [
   {
     title: "Live Product Demonstrations",
     image: "/images/events/progress-whatsup-demo.jpg",
-    imagePosition: "center top%",
+    imagePosition: "center 30%",
     description:
       "Delivered live demonstrations of WhatsUp Gold network monitoring and observability capabilities while translating technical features into customer outcomes.",
   },
