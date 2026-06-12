@@ -1,209 +1,156 @@
 import Image from "next/image";
+import SiteNav from "../components/SiteNav";
+
 
 import { industryPresence } from "../data/industryPresence";
-import { webinars } from "../data/webinars";
-import { events } from "../data/events";
-import { projects } from "../data/projects";
 
-const evidenceItems = [...webinars, ...events, ...projects];
 
-const proofPillars = [
-  "Customer-Facing Technical Leadership",
-  "Product & Engineering Proximity",
-  "Industry & Field Presence",
-  "Builder & Operator Experience",
-];
-
-const careerArc = [
+const portfolioPillars = [
   {
-    title: "Technical Support Leadership",
+    title: "Embedded in Research & Development",
+    hook: "Most support organizations operate outside engineering. Mine didn't.",
     description:
-      "Built deep operational expertise by helping organizations deploy, troubleshoot, and optimize critical infrastructure and monitoring platforms while serving as a direct bridge between customers and engineering teams.",
-    highlights: [
-      "Enterprise troubleshooting",
-      "Customer advocacy",
-      "Engineering collaboration",
-      "Dorian integration support",
-      "MOVEit integration support",
-      "Release validation",
+"Working inside a broader R&D organization provided direct exposure to engineering, quality assurance, product management, documentation, and customer feedback loops—offering a unique perspective on how products evolve and how customer reality shapes technical decisions.",
+    themes: [
+      "Voice of Customer",
+      "Engineering Collaboration",
+      "Product Feedback",
+      "Release Validation",
+      "Operational Intelligence",
     ],
+    href: "/portfolio/embedded-in-rd",
   },
   {
-    title: "Solutions Engineering",
+    title: "Bridging Customers and Engineering",
+    hook: "Many technology challenges are ultimately translation challenges.",
     description:
-      "Expanded from solving technical challenges to helping organizations align technology investments with business outcomes through discovery workshops, technical demonstrations, architecture discussions, and modernization initiatives.",
-    highlights: [
-      "Technical discovery",
-      "Solution design",
-      "Customer workshops",
-      "Public webinars",
-      "Industry events",
-      "Security modernization",
+      "Throughout my career, I frequently operated between customers, support teams, engineering organizations, product groups, and business stakeholders. The goal was rarely just solving a technical issue. The goal was creating shared understanding.",
+    themes: [
+      "Customer Advocacy",
+      "Technical Translation",
+      "Cross-Functional Leadership",
+      "Escalation Management",
+      "Business Alignment",
     ],
+    href: "/portfolio/bridging-customers-and-engineering",
   },
   {
-    title: "Builder & Operator",
+    title: "Supporting Technology Transitions",
+    hook: "Technology evolves. Organizations adapt.",
     description:
-      "Applied decades of customer, technical, and operational experience to building businesses, digital experiences, and guided decision systems designed to simplify complex workflows and improve customer outcomes.",
-    highlights: [
-      "Gallivanting Travel",
-      "Guided Intelligence Platform Design",
-      "Mrs. Clean transformation",
-      "AI-assisted workflows",
-      "Product strategy",
-      "Guided decision architecture",
+      "From infrastructure monitoring and virtualization through cloud adoption, security modernization, and AI-assisted workflows, my career has largely been spent helping organizations navigate periods of technological change. While platforms evolved, the adoption challenges remained remarkably similar.",
+    themes: [
+      "Technology Adoption",
+      "Modernization",
+      "Security Evolution",
+      "Change Management",
+      "Organizational Readiness",
     ],
-  },
-];
-
-const featuredEvidence = [
-  {
-    title: "Technical Education",
-    description:
-      "Customer webinars, workshops, demonstrations, and technical enablement initiatives designed to help organizations understand, deploy, and maximize the value of their technology investments.",
-    cta: "Explore Webinars",
-  },
-  {
-    title: "Industry Presence",
-    description:
-      "Trade shows, conferences, customer events, and field engagement activities representing products, educating customers, and participating in industry conversations.",
-    cta: "View Events",
-  },
-  {
-    title: "Product & Engineering Collaboration",
-    description:
-      "Examples of customer advocacy, engineering partnership, product feedback, release participation, acquisition integrations, and the practical work required to translate customer needs into product outcomes.",
-    cta: "Learn More",
-  },
-  {
-    title: "Builder Projects",
-    description:
-      "Business ventures, digital platforms, and guided workflow initiatives demonstrating hands-on execution across product design, customer experience, operational processes, and AI-assisted systems.",
-    cta: "View Projects",
+    href: "/portfolio/supporting-technology-transitions",
   },
 ];
 
 export default function PortfolioPage() {
-  return (
-    <main className="min-h-screen bg-slate-950 px-6 py-16 text-white">
-      <section className="mx-auto max-w-5xl">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Public Portfolio
+return (
+  <>
+    <SiteNav />
+    <main className="min-h-screen bg-[#020617] px-6 py-32 text-slate-100">      <section className="mx-auto max-w-6xl">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+          Portfolio
         </p>
 
-        <h1 className="text-5xl font-bold tracking-tight">Mark A. Singh</h1>
+<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">          Behind the Work
+        </h1>
 
-        <p className="mt-4 text-xl text-slate-300">
-          Technical Advisor • Solutions Engineer • Product Educator • Operator
+        <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
+          Some of the most meaningful contributions of my career were not
+          captured in webinars, published in articles, or recorded on conference
+          stages.
         </p>
 
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-          Public evidence of customer-facing technical leadership, product
-          collaboration, industry engagement, and operational execution
-          accumulated across more than 25 years in technology.
+        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">
+          They emerged through customer conversations, engineering partnerships,
+          product collaboration, and helping organizations navigate technology
+          change.
+        </p>
+
+        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">
+          The experiences below shaped how I approach technical leadership,
+          customer advocacy, and technology adoption today.
         </p>
       </section>
 
-      <section className="mx-auto mt-12 max-w-5xl">
-        <h2 className="text-2xl font-semibold">Proof Pillars</h2>
-
-        <div className="mt-6 grid gap-4 md:grid-cols-4">
-          {proofPillars.map((pillar) => (
-            <div
-              key={pillar}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm font-medium text-slate-200"
-            >
-              {pillar}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto mt-16 max-w-5xl">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Career Arc
+      <section className="mx-auto mt-20 max-w-6xl">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+          Narrative Pillars
         </p>
 
-        <h2 className="text-3xl font-semibold">Career Evolution</h2>
+        <h2 className="text-2xl font-bold tracking-tight">
+          The Experiences Behind the Perspective
+        </h2>
 
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-          A 25+ year journey spanning technical support leadership, solutions
-          engineering, customer advisory, and modern AI-guided workflow design.
-        </p>
-
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {careerArc.map((stage) => (
+        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+          {portfolioPillars.map((pillar) => (
             <article
-              key={stage.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
+              key={pillar.title}
+className="flex h-full flex-col rounded-2xl border border-slate-700/70 bg-slate-900/80 p-5 shadow-xl shadow-black/20"
             >
-              <h3 className="text-xl font-semibold">{stage.title}</h3>
+              <h3 className="text-xl font-bold text-white">{pillar.title}</h3>
 
-              <p className="mt-4 text-sm leading-7 text-slate-300">
-                {stage.description}
+              <p className="mt-4 text-sm font-semibold leading-6 text-cyan-300">
+                {pillar.hook}
               </p>
 
-              <ul className="mt-5 space-y-2 text-sm text-slate-300">
-                {stage.highlights.map((highlight) => (
-                  <li key={highlight}>• {highlight}</li>
-                ))}
-              </ul>
+<p className="mt-3 text-sm leading-5 text-slate-300">
+                  {pillar.description}
+              </p>
+
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-white">
+                  Key Themes
+                </h4>
+
+                <ul className="mt-2 space-y-1 text-sm text-slate-300">
+
+                  {pillar.themes.map((theme) => (
+                    <li key={theme}>• {theme}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-auto pt-8">
+                <a
+                  href={pillar.href}
+                  className="inline-flex rounded-full border border-cyan-500/60 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-cyan-200"
+                >
+                  Explore Story →
+                </a>
+              </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto mt-16 max-w-5xl">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Featured Evidence
+      <section className="mx-auto mt-20 max-w-6xl">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+          Field Experience
         </p>
 
-        <h2 className="text-3xl font-semibold">Proof Over Claims</h2>
+        <h2 className="text-2xl font-bold tracking-tight">
+          Technology Is a People Business
+        </h2>
 
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-          A selection of projects, events, technical contributions, and
-          customer-facing initiatives that demonstrate customer impact, product
-          collaboration, industry engagement, and operational execution.
-        </p>
-
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {featuredEvidence.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
-            >
-              <h3 className="text-2xl font-semibold">{item.title}</h3>
-
-              <p className="mt-4 leading-7 text-slate-300">
-                {item.description}
-              </p>
-
-              <button className="mt-6 rounded-full bg-cyan-300 px-5 py-2 text-sm font-semibold text-slate-950">
-                {item.cta}
-              </button>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto mt-16 max-w-5xl">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Industry Presence
-        </p>
-
-        <h2 className="text-3xl font-semibold">Field Experience in Action</h2>
-
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-          Conferences, trade shows, customer events, analyst engagements, and
-          field representation across enterprise, public sector, and technology
-          communities.
+        <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-300">
+          Conferences, analyst engagements, customer events, workshops,
+          demonstrations, and industry conversations accumulated across more
+          than two decades in technology.
         </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {industryPresence.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl"
+              className="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-900/80 shadow-xl shadow-black/20"
             >
               <Image
                 src={item.image}
@@ -211,69 +158,45 @@ export default function PortfolioPage() {
                 width={800}
                 height={520}
                 className="h-60 w-full object-cover"
-              style={{
-  objectPosition: item.imagePosition ?? "center",
-}}
+                style={{
+                  objectPosition: item.imagePosition ?? "center",
+                }}
               />
 
               <div className="p-6">
-<div className="mb-3">
-  <h3 className="text-xl font-semibold">{item.title}</h3>
-</div>
+                <h3 className="text-xl font-bold text-white">{item.title}</h3>
 
-                <p className="leading-7 text-slate-300">{item.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto mt-16 max-w-5xl rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-8">
-        <h2 className="text-2xl font-semibold">Why This Portfolio Exists</h2>
-
-        <p className="mt-4 max-w-4xl text-lg leading-8 text-slate-300">
-          Credibility is built through outcomes, not titles. This portfolio is
-          designed to provide evidence of technical leadership, customer
-          engagement, product collaboration, and builder experience through real
-          projects, events, and contributions accumulated over more than two
-          decades in technology.
-        </p>
-      </section>
-
-      <section className="mx-auto mt-16 max-w-5xl">
-        <h2 className="text-2xl font-semibold">Evidence of Impact</h2>
-
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          {evidenceItems.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl"
-            >
-              <div className="mb-4 flex items-center justify-between gap-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                  {item.category}
+                <p className="mt-4 text-sm leading-6 text-slate-300">
+                  {item.description}
                 </p>
-                <p className="text-sm text-slate-400">{item.year}</p>
               </div>
-
-              <h3 className="text-2xl font-semibold">{item.title}</h3>
-
-              <p className="mt-4 text-slate-300">{item.description}</p>
-
-              {item.url && (
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex rounded-full bg-cyan-300 px-5 py-2 text-sm font-semibold text-slate-950"
-                >
-                  View Evidence
-                </a>
-              )}
             </article>
           ))}
         </div>
       </section>
-    </main>
+
+      <section className="mx-auto mt-20 max-w-6xl">
+        <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+          <h2 className="text-lg font-bold text-white">
+            Why These Experiences Matter
+          </h2>
+
+          <p className="mt-3 max-w-4xl text-sm leading-6 text-slate-300">
+            The most valuable lessons of my career rarely came from technology
+            alone. They emerged through helping customers solve problems,
+            helping teams collaborate effectively, and helping organizations
+            navigate periods of change.
+          </p>
+
+          <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
+            That perspective continues to shape my work today across solutions
+            engineering, customer advisory, operational leadership, and guided
+            intelligence initiatives.
+          </p>
+        </div>
+      </section>
+
+      </main>
+    </>
   );
 }

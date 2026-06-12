@@ -1,3 +1,5 @@
+import SiteNav from "./components/SiteNav";
+
 export default function Home() {
   const cardClass =
     "h-full rounded-2xl border border-slate-800 bg-slate-900 p-6";
@@ -6,7 +8,11 @@ export default function Home() {
     "mt-10 rounded-2xl border border-cyan-900/60 bg-cyan-950/20 p-6";
 
   return (
-<main id="top" className="min-h-screen bg-slate-950 text-slate-100">      <div className="mx-auto max-w-6xl px-6 py-16">
+    <>
+      <SiteNav />
+
+      <main id="top" className="min-h-screen bg-slate-950 text-slate-100">
+      <div className="mx-auto max-w-6xl px-6 py-16">
         {/* Hero */}
         <section className="grid items-center gap-10 md:grid-cols-[320px_1fr]">
           <div>
@@ -19,8 +25,7 @@ export default function Home() {
 
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
-              Mark A. Singh
-            </p>
+HELPING ORGANIZATIONS NAVIGATE TECHNOLOGY CHANGE            </p>
 
             <h1 className="mb-6 text-5xl font-bold leading-tight">
               Bridging Customers,
@@ -29,44 +34,199 @@ export default function Home() {
             </h1>
 
             <p className="max-w-3xl text-slate-300 leading-relaxed">
-              The common thread throughout my career has been helping people
+              The common thread throughout my work has been helping people
               navigate complexity. Whether working with administrators,
-              engineers, executives, customers, or product teams, I have always
-              been drawn to understanding problems, creating clarity, and helping
-              people move confidently toward the next decision. That work has
-              taken me across enterprise support, engineering collaboration,
-              customer education, solutions consulting, and executive advisory
-              engagements—all centered around building trust through clarity.
+              engineers, executives, customers, or product teams, I have been
+              drawn to understanding problems, creating clarity, and helping
+              people move confidently toward the next decision.
             </p>
 
             <p className="mt-6 max-w-3xl text-slate-400 leading-relaxed">
-              My career has spanned enterprise infrastructure, cybersecurity,
-              network monitoring, technical leadership, customer advocacy, and
+              That work has taken me across enterprise support, engineering
+              collaboration, customer education, solutions consulting, and
               executive advisory engagements—all centered around translating
               complexity into clarity.
             </p>
           </div>
         </section>
 
-        {/* Pillars */}
+        {/* Technology Evolution */}
         <section className="mt-24">
           <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
-            Core Pillars
+            Technology Evolution
+          </p>
+
+          <h2 className="mb-6 text-3xl font-bold">
+            Technology Changes. Human Challenges Don't.
+          </h2>
+
+          <p className="max-w-4xl text-slate-300 leading-relaxed">
+            For more than twenty-five years, I have watched organizations adapt
+            to wave after wave of technology transformation.
+          </p>
+
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            The technologies changed dramatically. The challenges organizations
+            faced were often similar. Every new wave created
+            opportunity, pressure, uncertainty, competing priorities, and
+            questions about how to successfully adopt what came next.
+          </p>
+
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            Whether the conversation was about web applications, infrastructure
+            visibility, cloud adoption, cybersecurity modernization, or
+            artificial intelligence, success was rarely determined by technology
+            alone. Success depended on understanding the technology, aligning it
+            with business objectives, reducing ambiguity, and helping people
+            confidently move forward.
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className={cardClass}>
+              <h3 className="mb-3 text-xl font-semibold">
+                Client / Server Era
+              </h3>
+              <p className="text-slate-400">
+                Organizations were building internal systems and learning how
+                technology could improve operations.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Operational efficiency</li>
+                <li>• Internal systems</li>
+                <li>• Technology enablement</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-3 text-xl font-semibold">Web Adoption</h3>
+              <p className="text-slate-400">
+                Businesses and software vendors raced toward the web as
+                customers demanded online access and connected experiences.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Internet transformation</li>
+                <li>• Web-enabled applications</li>
+                <li>• Workflow change</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-3 text-xl font-semibold">
+                Infrastructure Visibility
+              </h3>
+              <p className="text-slate-400">
+                Growing networks created a need for visibility into devices,
+                services, dependencies, and operational health.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Discovery</li>
+                <li>• Monitoring</li>
+                <li>• Operational awareness</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-3 text-xl font-semibold">
+                Virtualization & Cloud
+              </h3>
+              <p className="text-slate-400">
+                Infrastructure became dynamic as organizations adopted virtual
+                platforms, cloud services, and SaaS applications.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Virtual infrastructure</li>
+                <li>• Cloud adoption</li>
+                <li>• SaaS transformation</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-3 text-xl font-semibold">
+                Security Modernization
+              </h3>
+              <p className="text-slate-400">
+                Expanding attack surfaces drove greater emphasis on visibility,
+                compliance, identity, and access control.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Visibility</li>
+                <li>• Compliance</li>
+                <li>• Zero Trust</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-3 text-xl font-semibold">
+                Artificial Intelligence
+              </h3>
+              <p className="text-slate-400">
+                Organizations are evaluating how AI fits into existing workflows
+                while balancing opportunity, risk, and adoption.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• AI adoption</li>
+                <li>• Workflow integration</li>
+                <li>• Decision support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={calloutClass}>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
+
+            <p className="text-slate-300 leading-relaxed">
+              The technologies change. The underlying challenge does not.
+              Organizations still need clarity. They still need trusted
+              guidance. They still need help understanding how technology fits
+              into their environment, workflows, objectives, and people.
+            </p>
+
+            <p className="mt-4 text-slate-300 leading-relaxed">
+              Whether the conversation is about infrastructure, cybersecurity,
+              cloud platforms, or artificial intelligence, the goal remains the
+              same: reducing complexity, building understanding, and helping
+              organizations move forward with confidence.
+            </p>
+          </div>
+        </section>
+
+        {/* Strategic Foundation */}
+        <section className="mt-24">
+          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
+            Strategic Foundation
           </p>
 
           <h2 className="mb-12 text-3xl font-bold">
-            The Themes That Have Defined My Career
+            The Themes That Have Defined My Work
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className={cardClass}>
+<p className="max-w-4xl text-slate-300 leading-relaxed">
+  Throughout my career, regardless of role, industry focus, or technology
+  trend, several themes have remained consistent.
+</p>
+
+<p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+  Whether supporting enterprise customers, collaborating with engineering
+  teams, presenting technical solutions, or advising executives, the
+  underlying objective has always been the same: understand the problem,
+  create clarity, and help organizations make informed decisions.
+</p>
+
+<p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+  These themes became the foundation for every role that followed and
+  continue to influence how I approach technology, customer engagement,
+  and business strategy today.
+  
+</p>
+
+<div className="mt-10 grid gap-6 md:grid-cols-3">            <div className={cardClass}>
               <h3 className="mb-4 text-xl font-semibold">
                 Customer Understanding
               </h3>
               <p className="text-slate-400">
                 Understanding operational challenges, customer priorities, and
-                real-world outcomes through years of enterprise support,
-                escalation leadership, and customer advocacy.
+                real-world outcomes through enterprise support, escalation
+                leadership, and customer advocacy.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-300">
                 <li>• Voice of the Customer</li>
@@ -112,6 +272,21 @@ export default function Home() {
           </div>
         </section>
 
+<div className={calloutClass}>
+  <h3 className="mb-3 text-xl font-semibold">
+    Strategic Perspective
+  </h3>
+
+  <p className="text-slate-300 leading-relaxed">
+    These themes have remained consistent throughout every stage of my
+    career. Whether working in support, engineering collaboration,
+    customer education, solutions consulting, or executive advisory
+    engagements, the objective has always been the same: understand the
+    problem, create clarity, and help organizations move forward with
+    confidence.
+  </p>
+</div>
+
         {/* Understanding Problems */}
         <section className="mt-24">
           <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
@@ -126,27 +301,27 @@ export default function Home() {
             Long before I was presenting solutions, leading workshops, or
             advising executives, I spent years working directly with the people
             responsible for keeping critical systems running. Those experiences
-            provided a front-row seat to the operational challenges, business
+            provided a front-row seat to operational challenges, business
             pressures, and technical realities organizations face every day.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
             From enterprise administrators and network engineers to IT directors
             and security leaders, I learned that successful technology outcomes
-            rarely begin with products. They begin with understanding operational
-            challenges, business priorities, technical constraints, and the
-            people responsible for making decisions.
+            rarely begin with products. They begin with understanding
+            operational challenges, business priorities, technical constraints,
+            and the people responsible for making decisions.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className={cardClass}>
               <h3 className="mb-4 text-xl font-semibold">
-                Voice of the Customer
+                Customer Advocacy
               </h3>
               <p className="text-slate-400">
                 Worked directly with enterprise customers supporting network
-                monitoring, infrastructure management, and operational visibility
-                platforms.
+                monitoring, infrastructure management, and operational
+                visibility platforms.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-300">
                 <li>• Trusted escalation resource for enterprise customers</li>
@@ -192,17 +367,17 @@ export default function Home() {
           </div>
 
           <div className={calloutClass}>
-            <h3 className="mb-3 text-xl font-semibold">Why This Matters</h3>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
             <p className="text-slate-300 leading-relaxed">
-              The most important lesson from those years was simple: technology
-              problems are rarely just technology problems. Behind every ticket,
-              escalation, outage, deployment, or modernization effort were people
-              trying to make informed decisions in complex environments.
+              Technology problems are rarely just technology problems. Behind
+              every ticket, escalation, outage, deployment, or modernization
+              effort are people trying to make informed decisions in complex
+              environments.
             </p>
             <p className="mt-4 text-slate-400 leading-relaxed">
-              Learning to understand those environments first became the
-              foundation for customer education, solutions engineering,
-              executive advisory conversations, and every role that followed.
+              Understanding those environments first became the foundation for
+              customer education, solutions engineering, executive advisory
+              conversations, and the work that followed.
             </p>
           </div>
         </section>
@@ -218,9 +393,15 @@ export default function Home() {
           </h2>
 
           <p className="max-w-4xl text-slate-300 leading-relaxed">
-            During my years at Ipswitch, technical support operated as part of
-            the Research & Development organization alongside development,
-            quality assurance, product management, and documentation teams.
+            Products succeed or fail based on the relationship between
+            customers, engineering, product management, documentation, adoption,
+            and support.
+          </p>
+
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            Being embedded in R&D provided visibility into all of those
+            perspectives simultaneously and fundamentally changed how I think
+            about technology.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
@@ -284,7 +465,7 @@ export default function Home() {
           </div>
 
           <div className={calloutClass}>
-            <h3 className="mb-3 text-xl font-semibold">Why This Matters</h3>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
             <p className="text-slate-300 leading-relaxed">
               The real value of this experience was not technical support alone.
               It was gaining visibility into the relationship between customers,
@@ -311,15 +492,16 @@ export default function Home() {
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            Throughout my career, I have spent significant time translating
-            technical concepts into practical outcomes through customer
-            workshops, webinars, live demonstrations, industry conferences,
-            analyst briefings, and executive discussions.
+            Technical concepts become valuable when people can connect them to
+            practical outcomes. Customer workshops, webinars, live
+            demonstrations, industry conferences, analyst briefings, and
+            executive discussions all required the same skill: turning complexity
+            into clarity.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
             Whether presenting to administrators, engineers, directors, or
-            executive stakeholders, the goal remained the same: reduce
+            executive stakeholders, the goal remains the same: reduce
             complexity, create clarity, and help people make informed decisions.
           </p>
 
@@ -364,9 +546,9 @@ export default function Home() {
                 Communicating Across Audiences
               </h3>
               <p className="text-slate-400">
-                One of the most valuable skills developed throughout my career
-                has been the ability to communicate effectively with different
-                audiences while adapting technical depth to their needs.
+                Different audiences require different levels of technical depth.
+                The work is not just explaining technology. It is making the
+                explanation useful to the person making the decision.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-300">
                 <li>• Administrators and engineers</li>
@@ -378,14 +560,13 @@ export default function Home() {
           </div>
 
           <div className={calloutClass}>
-            <h3 className="mb-3 text-xl font-semibold">Why This Matters</h3>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
             <p className="text-slate-300 leading-relaxed">
-              Technology creates value only when people understand how it applies
-              to their environment. The ability to translate technical complexity
-              into clear, actionable guidance became a defining theme throughout
-              my career and opened opportunities in customer education, solutions
-              engineering, executive advisory engagements, and industry
-              representation.
+              Technology creates value only when people understand how it
+              applies to their environment. Translating technical complexity into
+              clear, actionable guidance became a defining theme across customer
+              education, solutions engineering, executive advisory engagements,
+              and industry representation.
             </p>
           </div>
         </section>
@@ -401,18 +582,18 @@ export default function Home() {
           </h2>
 
           <p className="max-w-4xl text-slate-300 leading-relaxed">
-            Over the course of my career, I have had the opportunity to work on
-            both sides of the customer relationship.
+            I have had the opportunity to work on both sides of the customer
+            relationship.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            In support and customer advocacy roles, my responsibility was
+            In support and customer advocacy roles, the responsibility was
             understanding customer challenges, helping organizations resolve
             issues, and ensuring critical systems remained operational.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            In solutions engineering and advisory roles, my focus shifted toward
+            In solutions engineering and advisory roles, the focus shifted toward
             helping organizations evaluate technology, align solutions with
             business objectives, and make informed investment decisions.
           </p>
@@ -477,7 +658,7 @@ export default function Home() {
           </div>
 
           <div className={calloutClass}>
-            <h3 className="mb-3 text-xl font-semibold">Why This Matters</h3>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
             <p className="text-slate-300 leading-relaxed">
               Experiencing both sides of the customer relationship created a
               broader perspective than either support or sales alone. It provided
@@ -503,25 +684,22 @@ export default function Home() {
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            Throughout my career, I observed that successful projects depended
-            as much on organizational alignment, communication, priorities, and
-            stakeholder engagement as they did on technical capabilities.
+            Successful projects depend as much on organizational alignment,
+            communication, priorities, and stakeholder engagement as they do on
+            technical capabilities.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
             My Master's in Management reinforced many of the lessons I was
             already seeing firsthand. Organizational behavior, cross-functional
             collaboration, leadership dynamics, and decision-making processes all
-            played a role in how technology was evaluated, adopted, and
-            supported.
+            play a role in how technology is evaluated, adopted, and supported.
           </p>
 
           <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            Whether working with administrators, engineers, managers, executives,
-            or product teams, I learned that different groups often view the same
-            challenge through different lenses. Effective outcomes require
-            understanding those perspectives and helping create alignment around
-            shared objectives.
+            Different groups often view the same challenge through different
+            lenses. Effective outcomes require understanding those perspectives
+            and helping create alignment around shared objectives.
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -576,103 +754,185 @@ export default function Home() {
           </div>
 
           <div className={calloutClass}>
-            <h3 className="mb-3 text-xl font-semibold">Why This Matters</h3>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
             <p className="text-slate-300 leading-relaxed">
-              The most successful technology initiatives are rarely determined by
-              technology alone. Understanding how organizations make decisions,
-              manage change, and align stakeholders became just as important as
-              understanding the platforms themselves.
+              The most successful technology initiatives are rarely determined
+              by technology alone. Understanding how organizations make
+              decisions, manage change, and align stakeholders became just as
+              important as understanding the platforms themselves.
             </p>
           </div>
         </section>
-        {/* Customer Engagements & Adoption */}
+
+        {/* Customer Engagement & Adoption */}
         <section className="mt-24">
-  <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">
-    CUSTOMER ENGAGEMENT & ADOPTION
-  </p>
+          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
+            Customer Engagement & Adoption
+          </p>
 
-  <h2 className="mt-4 text-4xl font-bold">
-    Technology Only Creates Value When People Use It
-  </h2>
+          <h2 className="mb-6 text-3xl font-bold">
+            Technology Only Creates Value When People Use It
+          </h2>
 
-  <div className="mt-8 space-y-6 text-slate-300 leading-relaxed">
-    <p>
-      Throughout the early growth of enterprise web technologies,
-      organizations faced a challenge that was not purely technical.
-      They knew the internet would change how they operated, but many
-      struggled to understand how to adopt new platforms effectively.
-    </p>
+          <p className="max-w-4xl text-slate-300 leading-relaxed">
+            During the early growth of enterprise web technologies,
+            organizations faced a challenge that was not purely technical. They
+            knew the internet would change how they operated, but many struggled
+            to understand how to adopt new platforms effectively.
+          </p>
 
-    <p>
-      During my years supporting and advising customers, I saw the same
-      pattern repeatedly. Success was rarely determined by whether a
-      technology worked. Success depended on whether people understood
-      how that technology fit into their environment, processes, and
-      business objectives.
-    </p>
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            The same pattern appears with every major technology wave. Success is
+            rarely determined by whether a technology works. Success depends on
+            whether people understand how that technology fits into their
+            environment, processes, and business objectives.
+          </p>
 
-    <p>
-      Through customer workshops, demonstrations, training sessions,
-      conference engagements, and direct customer interactions, I helped
-      bridge the gap between technical capability and practical adoption.
-    </p>
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            Customer workshops, demonstrations, training sessions, conference
+            engagements, and direct customer interactions all helped bridge the
+            gap between technical capability and practical adoption.
+          </p>
 
-    <p>
-Looking back, those adoption challenges closely resemble what organizations face with AI today. The technology itself is rarely the biggest obstacle. The challenge is helping people understand where it fits, how it creates value, and how to confidently integrate it into existing workflows. Throughout my career, that bridge between capability and adoption has been a recurring theme.    </p>
-  </div>
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            Those adoption challenges closely resemble what organizations face
+            with AI today. The technology itself is rarely the biggest obstacle.
+            The challenge is helping people understand where it fits, how it
+            creates value, and how to confidently integrate it into existing
+            workflows.
+          </p>
 
-  <div className="mt-10 grid gap-6 md:grid-cols-3">
-    <div className={cardClass}>
-      <h3 className="text-2xl font-semibold">
-        Customer Education
-      </h3>
-      <ul className="mt-4 space-y-2 text-slate-300">
-        <li>• Technical workshops</li>
-        <li>• Customer training sessions</li>
-        <li>• Product education programs</li>
-        <li>• Hands-on demonstrations</li>
-      </ul>
-    </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className={cardClass}>
+              <h3 className="mb-4 text-xl font-semibold">
+                Customer Education
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Technical workshops</li>
+                <li>• Customer training sessions</li>
+                <li>• Product education programs</li>
+                <li>• Hands-on demonstrations</li>
+              </ul>
+            </div>
 
-    <div className={cardClass}>
-      <h3 className="text-2xl font-semibold">
-        Technology Adoption
-      </h3>
-      <ul className="mt-4 space-y-2 text-slate-300">
-        <li>• Platform onboarding</li>
-        <li>• Change management support</li>
-        <li>• Operational alignment</li>
-        <li>• User enablement</li>
-      </ul>
-    </div>
+            <div className={cardClass}>
+              <h3 className="mb-4 text-xl font-semibold">
+                Technology Adoption
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Platform onboarding</li>
+                <li>• Change management support</li>
+                <li>• Operational alignment</li>
+                <li>• User enablement</li>
+              </ul>
+            </div>
 
-    <div className={cardClass}>
-      <h3 className="text-2xl font-semibold">
-        Modern AI Parallel
-      </h3>
-      <ul className="mt-4 space-y-2 text-slate-300">
-        <li>• Ambiguity reduction</li>
-        <li>• Guided adoption</li>
-        <li>• Workflow integration</li>
-        <li>• Trust through clarity</li>
-      </ul>
-    </div>
-  </div>
+            <div className={cardClass}>
+              <h3 className="mb-4 text-xl font-semibold">
+                Modern AI Parallel
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Ambiguity reduction</li>
+                <li>• Guided adoption</li>
+                <li>• Workflow integration</li>
+                <li>• Trust through clarity</li>
+              </ul>
+            </div>
+          </div>
 
-  <div className={calloutClass}>
-    <h3 className="text-2xl font-semibold">
-      Why This Matters
-    </h3>
+          <div className={calloutClass}>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
+            <p className="text-slate-300 leading-relaxed">
+              Adoption challenges are not new. The tools change, but
+              organizations still need help moving from uncertainty to confident
+              action.
+            </p>
+          </div>
+        </section>
 
-    <p className="mt-4 text-slate-300">
-      The adoption challenges organizations face with AI today are
-      remarkably similar to the adoption challenges businesses faced
-      during the growth of the web. My career has consistently centered
-      on helping organizations move from uncertainty to confident action.
-    </p>
-  </div>
-</section>
+        {/* Customer Experience + Product Strategy */}
+        <section className="mt-24">
+          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
+            Customer Experience + Product Strategy
+          </p>
+
+          <h2 className="mb-6 text-3xl font-bold">
+            Where Customer Experience Meets Product Strategy
+          </h2>
+
+          <p className="max-w-4xl text-slate-300 leading-relaxed">
+            Products do not succeed because engineering builds them. Products
+            succeed when customers can adopt them, trust them, and integrate
+            them into their daily operations.
+          </p>
+
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            Working within an R&D organization provided visibility into both
+            sides of that equation. Customers experienced the product in
+            production. Engineering evolved the product. Product management
+            balanced priorities. Documentation enabled adoption. Support
+            connected those groups together.
+          </p>
+
+          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+            That environment reinforced a lesson that continues to shape how I
+            approach technology today: successful outcomes require alignment
+            between technical capability and human reality.
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className={cardClass}>
+              <h3 className="mb-4 text-xl font-semibold">
+                Customer Reality
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Escalations and operational feedback</li>
+                <li>• Adoption challenges</li>
+                <li>• Feature requests</li>
+                <li>• Real-world deployment realities</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-4 text-xl font-semibold">
+                Voice of the Product
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Engineering priorities</li>
+                <li>• Release readiness</li>
+                <li>• Product strategy discussions</li>
+                <li>• Technical trade-offs</li>
+              </ul>
+            </div>
+
+            <div className={cardClass}>
+              <h3 className="mb-4 text-xl font-semibold">
+                The Translation Layer
+              </h3>
+              <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                <li>• Converting customer challenges into actionable insight</li>
+                <li>• Helping engineering understand operational impact</li>
+                <li>• Supporting successful adoption</li>
+                <li>• Connecting business needs to technical execution</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={calloutClass}>
+            <h3 className="mb-3 text-xl font-semibold">Strategic Perspective</h3>
+            <p className="text-slate-300 leading-relaxed">
+              Organizations often separate customer-facing teams from product
+              teams. Working at the intersection of both created a deeper
+              understanding of how products evolve, how adoption succeeds, and
+              how technology decisions are made.
+            </p>
+
+            <p className="mt-4 text-slate-300 leading-relaxed">
+That perspective became the foundation for solutions engineering, executive advisory work, and a broader philosophy centered on guided intelligence—helping organizations and individuals navigate complexity, reduce ambiguity, and move forward with confidence.            </p>
+          </div>
+        </section>
       </div>
-    </main>
+      </main>
+    </>
   );
 }
