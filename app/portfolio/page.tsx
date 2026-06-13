@@ -57,9 +57,8 @@ const fieldValidationCards = [
       "Mark and I have completed multiple webinars, blog posts, and demos for public consumption. Mark's product knowledge and light touch bring value to everything we've worked on.",
     author: "Larry Goldman",
     href: "https://www.linkedin.com/in/ligoldman/",
-    title:
-      "Executive Product Marketing Leader | Go-To-Market Strategy | Competitive Positioning | Revenue Growth",
-    context: "Webinar, Content & Product Marketing Partner",
+title: "DIRECTOR, PRODUCT MARKETING — INFRASTRUCTURE MANAGEMENT SOLUTIONS",
+context: "Product Marketing & Public Communications Partner",
   },
   {
     theme: "Field Execution & Customer Engagement",
@@ -67,8 +66,8 @@ const fieldValidationCards = [
       "Mark was a great asset with webinars and content creation. He would always raise his hand to help with events including setup, teardown, demos, badge scanning, and customer engagement. He has a vast understanding of technology and product that is unmatched.",
     author: "Alexandra Cassandro Arora",
     href: "https://www.linkedin.com/in/alexandra-cassandro-arora/",
-    title: "Demand Gen Wizard",
-    context: "Demand Generation & Field Events Partner",
+title: "NA FIELD AND CHANNEL MARKETING MANAGER",
+context: "Field Events, Webinars & Customer Engagement Partner",
   },
 ];
 

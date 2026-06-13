@@ -29,7 +29,7 @@ const recommendationCards = [
     title: "Senior Sales Manager — Progress Software",
     context: "Sales Leadership",
   },
-    {
+  {
     theme: "Voice of the Customer Inside Engineering",
     quote:
       "Mark often provided my team with user input, application usability feedback, and prioritisation of testing features for release.",
@@ -38,7 +38,6 @@ const recommendationCards = [
     title: "QA Team Manager — Network Monitoring Group, Ipswitch",
     context: "Engineering & QA Partner",
   },
-
 ];
 
 export default function ExperiencePage() {
@@ -147,6 +146,68 @@ export default function ExperiencePage() {
           </div>
         </section>
 
+        <section className="mx-auto mt-16 max-w-5xl">
+          <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+              Professional Perspectives
+            </p>
+
+            <h2 className="text-2xl font-bold text-white">
+              Perspectives From Along the Journey
+            </h2>
+
+            <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
+              The observations below come from leaders and partners who worked
+              with me across solutions engineering, sales, quality assurance,
+              product development, and customer-facing teams. Different roles,
+              different eras, same recurring themes: trust, technical depth,
+              customer advocacy, and cross-functional alignment.
+            </p>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {recommendationCards.map((item) => (
+                <article
+                  key={item.author}
+                  className="rounded-2xl border-l-2 border-cyan-400 bg-slate-900/70 p-5"
+                >
+                  <h3 className="text-lg font-bold text-white">
+                    {item.theme}
+                  </h3>
+
+                  <p className="mt-4 text-sm italic leading-6 text-slate-300">
+                    “{item.quote}”
+                  </p>
+
+                  <div className="mt-5">
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-white transition hover:text-cyan-300"
+                    >
+                      {item.author} ↗
+                    </a>
+
+                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
+                      {item.title}
+                    </p>
+
+                    <p className="mt-1 text-xs text-slate-400">
+                      {item.context}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <p className="mt-6 text-xs leading-5 text-slate-400">
+              Excerpts from public LinkedIn recommendations provided by
+              managers, sales leaders, account executives, and engineering
+              partners across multiple stages of my career.
+            </p>
+          </div>
+        </section>
+
         <section className="mx-auto mt-10 max-w-5xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
             Career Themes
@@ -182,8 +243,12 @@ export default function ExperiencePage() {
 
         <section className="mx-auto mt-16 max-w-5xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
-            Professional Experience
+            Career Journey
           </p>
+
+          <h2 className="mb-8 text-2xl font-bold text-white">
+            Applying Those Principles Across Multiple Technology Eras
+          </h2>
 
           <div className="space-y-8">
             <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
@@ -360,155 +425,72 @@ export default function ExperiencePage() {
                 </li>
               </ul>
             </article>
-
-            <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
-              <h2 className="text-2xl font-bold text-white">
-                Ecommerce Systems Administration
-              </h2>
-              <p className="mt-2 text-sm font-semibold text-cyan-300">
-                Systems & Network Administration • 1998 – 2000
-              </p>
-              <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
-                <li>
-                  • Supported desktop, server, messaging, and network
-                  infrastructure.
-                </li>
-                <li>• Administered IMail messaging environments.</li>
-                <li>
-                  • Developed foundational expertise in systems administration
-                  and enterprise operations.
-                </li>
-              </ul>
-            </article>
-
-            <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
-              <h2 className="text-2xl font-bold text-white">
-                United States Army
-              </h2>
-              <p className="mt-2 text-sm font-semibold text-cyan-300">
-                Automated Logistical Specialist 92A • 1994 – 1998
-              </p>
-              <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
-                <li>• Served with the 513th Military Intelligence Brigade.</li>
-                <li>• Supported NATO operations associated with Bosnia.</li>
-                <li>
-                  • Developed foundations in logistics, accountability,
-                  teamwork, and operational discipline.
-                </li>
-              </ul>
-            </article>
           </div>
         </section>
 
-        <section className="mx-auto mt-16 max-w-5xl">
-          <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
-              Professional Perspectives
-            </p>
+<section className="mx-auto mt-12 max-w-5xl">
+  <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
+    <h2 className="text-2xl font-bold text-white">
+      Professional Toolkit
+    </h2>
 
-            <h2 className="text-2xl font-bold text-white">
-              Perspectives From Along the Journey
-            </h2>
+    <div className="mt-8 grid gap-8 md:grid-cols-2">
+      <div>
+        <h3 className="font-semibold text-white">
+          Customer Engagement & Technical Education
+        </h3>
 
-            <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
-              The observations below come from leaders and partners who worked
-              with me across solutions engineering, sales, quality assurance,
-              product development, and customer-facing teams. Different roles,
-              different eras, same recurring themes: trust, technical depth,
-              customer advocacy, and cross-functional alignment.
-            </p>
+        <p className="mt-3 text-sm leading-7 text-slate-300">
+          Webinars • Demonstrations • Workshops • Technical Writing • Public
+          Speaking • Executive Presentations
+        </p>
+      </div>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-2">
-              {recommendationCards.map((item) => (
-                <article
-                  key={item.author}
-                  className="rounded-2xl border-l-2 border-cyan-400 bg-slate-900/70 p-5"
-                >
-                  <h3 className="text-lg font-bold text-white">
-                    {item.theme}
-                  </h3>
+      <div>
+        <h3 className="font-semibold text-white">
+          Product & Engineering Collaboration
+        </h3>
 
-                  <p className="mt-4 text-sm italic leading-6 text-slate-300">
-                    “{item.quote}”
-                  </p>
+        <p className="mt-3 text-sm leading-7 text-slate-300">
+          Jira • Agile • Defect Triage • Voice of Customer Programs • Product
+          Feedback Loops • Release Validation
+        </p>
+      </div>
 
-                  <div className="mt-5">
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-semibold text-white transition hover:text-cyan-300"
-                    >
-                      {item.author} ↗
-                    </a>
-                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
-                      {item.title}
-                    </p>
+      <div>
+        <h3 className="font-semibold text-white">
+          Customer Lifecycle & Operations
+        </h3>
 
-                    <p className="mt-1 text-xs text-slate-400">
-                      {item.context}
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
+        <p className="mt-3 text-sm leading-7 text-slate-300">
+Salesforce • ServiceNow • Technical Discovery • Requirements Discovery •
+Customer Journey Mapping • Adoption Strategy • Customer Retention        </p>
+      </div>
 
-            <p className="mt-6 text-xs leading-5 text-slate-400">
-Excerpts from public LinkedIn recommendations provided by managers,
-sales leaders, account executives, and engineering partners across multiple stages of my career.            </p>
-                
-          </div>
-        </section>
+      <div>
+        <h3 className="font-semibold text-white">
+          Infrastructure & Security Technologies
+        </h3>
 
-        <section className="mx-auto mt-16 max-w-5xl">
-          <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
-            <h2 className="text-2xl font-bold text-white">
-              Professional Toolkit
-            </h2>
+        <p className="mt-3 text-sm leading-7 text-slate-300">
+          WhatsUp Gold • VMware • Microsoft SQL Server • Azure • Infrastructure
+          Monitoring • SASE • Zero Trust • ZTNA
+        </p>
+      </div>
 
-            <div className="mt-6 grid gap-8 text-sm leading-6 text-slate-300 md:grid-cols-2">
-              <div>
-                <h3 className="font-bold text-white">
-                  Customer Engagement & Technical Education
-                </h3>
-                <p className="mt-3">
-                  Webinars • Demonstrations • Workshops • Technical Writing •
-                  Public Speaking • Executive Presentations
-                </p>
-              </div>
+      <div className="md:col-span-2">
+        <h3 className="font-semibold text-white">
+          Modern SaaS & AI Workflows
+        </h3>
 
-              <div>
-                <h3 className="font-bold text-white">
-                  Product & Engineering Collaboration
-                </h3>
-                <p className="mt-3">
-                  Jira • TestTrack • Agile • Defect Triage • Voice of Customer
-                  Programs • Cross-Functional Leadership
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-white">
-                  Customer Lifecycle & Operations
-                </h3>
-                <p className="mt-3">
-                  Salesforce • Sage CRM • ServiceNow • Renewals • Customer
-                  Retention • Technical Discovery
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-bold text-white">
-                  Infrastructure & Security Technologies
-                </h3>
-                <p className="mt-3">
-                  WhatsUp Gold • WS_FTP Server • VMware • Microsoft SQL Server
-                  • Azure • IIS • Infrastructure Monitoring
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <p className="mt-3 text-sm leading-7 text-slate-300">
+          API Workflows • Orchestration Design • Telemetry • Frontend/Backend
+          Coordination • AI-Assisted Workflows • Guided Intelligence Concepts
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section className="mx-auto mt-10 max-w-5xl">
           <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
@@ -529,6 +511,64 @@ sales leaders, account executives, and engineering partners across multiple stag
                 partner enablement, and channel-facing technical events.
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section className="mx-auto mt-16 max-w-5xl">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+            Earlier Career Foundations
+          </p>
+
+          <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+            <p className="max-w-4xl text-sm leading-6 text-slate-300">
+              Before entering enterprise software, my professional foundation was
+              built through military service, logistics, operational
+              accountability, and hands-on systems administration. Those
+              experiences established many of the principles that later shaped my
+              approach to customer support, engineering collaboration, and
+              solutions consulting.
+            </p>
+
+            <div className="mt-8 space-y-6">
+              <article className="rounded-2xl border border-slate-700/70 bg-slate-950/40 p-5">
+                <h2 className="text-xl font-bold text-white">
+                  Ecommerce Systems Administration
+                </h2>
+                <p className="mt-2 text-sm font-semibold text-cyan-300">
+                  Systems & Network Administration • 1998 – 2000
+                </p>
+                <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
+                  <li>
+                    • Supported desktop, server, messaging, and network
+                    infrastructure.
+                  </li>
+                  <li>• Administered IMail messaging environments.</li>
+                  <li>
+                    • Developed foundational expertise in systems administration
+                    and enterprise operations.
+                  </li>
+                </ul>
+              </article>
+
+              <article className="rounded-2xl border border-slate-700/70 bg-slate-950/40 p-5">
+                <h2 className="text-xl font-bold text-white">
+                  United States Army
+                </h2>
+                <p className="mt-2 text-sm font-semibold text-cyan-300">
+                  Automated Logistical Specialist 92A • 1994 – 1998
+                </p>
+                <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
+                  <li>
+                    • Served with the 513th Military Intelligence Brigade.
+                  </li>
+                  <li>• Supported NATO operations associated with Bosnia.</li>
+                  <li>
+                    • Developed foundations in logistics, accountability,
+                    teamwork, and operational discipline.
+                  </li>
+                </ul>
+              </article>
+            </div>
           </div>
         </section>
 

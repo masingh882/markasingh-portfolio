@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import SiteNav from "../components/SiteNav";
 
@@ -101,64 +102,103 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="mx-auto mt-10 max-w-5xl">
-          <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
-            <h2 className="text-2xl font-bold text-white">Connect</h2>
+<section className="mx-auto mt-10 max-w-5xl">
+  <div className="grid gap-8 rounded-2xl border border-slate-700/70 bg-slate-900/70 p-8 shadow-xl shadow-black/20 md:grid-cols-[1fr_340px] md:items-center">
+    <div>
+      <h2 className="text-2xl font-bold text-white">Connect</h2>
 
-            <div className="mt-6 space-y-4 text-sm leading-6 text-slate-300">
-              <p className="text-lg font-semibold text-white">
-                Mark <span className="text-cyan-300">A.</span> Singh
-              </p>
+      <div className="mt-6 space-y-4 text-sm leading-6 text-slate-300">
+        <p className="text-lg font-semibold text-white">
+          Mark <span className="text-cyan-300">A.</span> Singh
+        </p>
+<p className="font-medium text-cyan-300">
+  Helping Organizations Navigate Technology Change
+</p>
+        <p>
+          Senior Solutions Engineer
+          <br />
+          Technology Advisor
+          <br />
+          Customer & Engineering Advocate
+        </p>
 
-              <p>
-                Senior Solutions Engineer
-                <br />
-                Technology Advisor
-                <br />
-                Customer & Engineering Advocate
-              </p>
+        <p>Coral Springs, Florida</p>
 
-              <p>Coral Springs, Florida</p>
+        <div className="space-y-2 pt-2">
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:m.a.singh882@email.com"
+              className="font-semibold text-cyan-300 transition hover:text-cyan-200"
+            >
+              m.a.singh882@email.com
+            </a>
+          </p>
 
-              <div className="space-y-2 pt-2">
-                <p>
-                  Email:{" "}
-                  <a
-                    href="mailto:m.a.singh882@email.com"
-                    className="font-semibold text-cyan-300 transition hover:text-cyan-200"
-                  >
-                    m.a.singh882@email.com
-                  </a>
-                </p>
+          <p>
+            LinkedIn:{" "}
+            <a
+              href="https://linkedin.com/in/markasingh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-cyan-300 transition hover:text-cyan-200"
+            >
+              View Profile ↗
+            </a>
+          </p>
 
-                <p>
-                  LinkedIn:{" "}
-                  <a
-                    href="https://linkedin.com/in/markasingh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-cyan-300 transition hover:text-cyan-200"
-                  >
-                    View Profile ↗
-                  </a>
-                </p>
+          <p>
+            Website:{" "}
+            <a
+              href="https://markasingh.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-cyan-300 transition hover:text-cyan-200"
+            >
+              markasingh.com ↗
+            </a>
+          </p>
+        </div>
+      </div>
 
-                <p>
-                  Website:{" "}
-                  <a
-                    href="https://markasingh.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-cyan-300 transition hover:text-cyan-200"
-                  >
-                    markasingh.com ↗
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className="mt-8 rounded-2xl border-l-2 border-cyan-400 bg-slate-950/40 p-5">
+        <p className="text-sm italic leading-6 text-slate-300">
+          “Mark has a valuable combination of grace, technical acumen and
+          management skills. He has a knack for expressing product needs in
+          customer terms, and he&apos;s unflappable in difficult situations.”
+        </p>
 
+        <div className="mt-5">
+<a
+  href="https://www.linkedin.com/in/blakley/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm font-semibold text-white transition hover:text-cyan-300"
+>
+  Michael Blakley ↗
+</a>
+          <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
+            Senior Manager, High-Tech Customer Care - Ipswitch
+          </p>
+          <p className="mt-1 text-xs text-slate-400">
+            Former Manager & Early Career Mentor
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-950/40">
+      <Image
+        src="/images/headshots/mark-singh-contact.jpg"
+        alt="Mark A. Singh"
+        width={680}
+        height={820}
+        className="h-[420px] w-full object-cover object-center"
+        priority
+      />
+    </div>
+  </div>
+</section>
         <section className="mx-auto mt-10 max-w-5xl">
           <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
             <h2 className="text-2xl font-bold text-white">
