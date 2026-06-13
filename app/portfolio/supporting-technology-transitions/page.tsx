@@ -68,8 +68,8 @@ export default function SupportingTechnologyTransitionsPage() {
           <p className="mt-6 text-base leading-7 text-slate-300">
             Throughout my career, I have worked through multiple waves of
             technology transformation. While platforms, architectures, and tools
-            changed dramatically, the underlying challenge remained remarkably
-            consistent: helping people understand, adopt, and operationalize
+            changed dramatically, the underlying challenge remained 
+        consistent: helping people understand, adopt, and operationalize
             change.
           </p>
 

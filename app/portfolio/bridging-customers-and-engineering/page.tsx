@@ -25,7 +25,7 @@ export default function BridgingCustomersAndEngineeringPage() {
             Throughout my career, I have frequently operated between customers,
             support teams, engineering organizations, product groups, and
             business stakeholders. While the technologies changed, the
-            objective remained remarkably consistent: creating shared
+            objective remained consistent: creating shared
             understanding between people approaching the same problem from
             different perspectives.
           </p>
