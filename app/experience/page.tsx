@@ -361,6 +361,97 @@ export default function ExperiencePage() {
         </section>
 
         <section className="mx-auto mt-16 max-w-5xl">
+          <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+              Professional Perspectives
+            </p>
+
+            <h2 className="text-2xl font-bold text-white">
+              Perspectives From Along the Journey
+            </h2>
+
+            <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
+              The observations below come from leaders and partners who worked
+              with me across solutions engineering, sales, quality assurance,
+              product development, and customer-facing teams. Different roles,
+              different eras, same recurring themes: trust, technical depth,
+              customer advocacy, and cross-functional alignment.
+            </p>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {[
+                {
+                  theme: "Trusted Technical Advisor",
+                  quote:
+                    "Mark is responsive and technically adept. He demonstrates a real willingness to engage and assist anyone in need of help. He has a refreshing personality and a very thoughtful customer-engagement style.",
+                  author: "Andrew Redman",
+                  title:
+                    "Director, Americas Solution Engineering — Progress Software",
+                  context: "Direct Manager",
+                },
+                {
+                  theme: "Driving Customer Outcomes",
+                  quote:
+                    "Mark provided exceptional technical demos and resolved evaluation issues while helping me create a sense of urgency to keep the sales cycle on track for a quick close. From his thorough follow up to his technical expertise, Mark played a vital and important role with my success in sales.",
+                  author: "Georgia Apinian",
+                  title: "Senior Account Executive — Progress Software",
+                  context: "Enterprise Account Executive Partner",
+                },
+                {
+                  theme: "Voice of the Customer Inside Engineering",
+                  quote:
+                    "Mark often provided my team with user input, application usability feedback, and prioritisation of testing features for release.",
+                  author: "Victor Hernandez",
+                  title:
+                    "QA Team Manager — Network Monitoring Group, Ipswitch",
+                  context: "Engineering & QA Partner",
+                },
+                {
+                  theme: "Bridging Technology and Business",
+                  quote:
+                    "Mark provided not only a tremendous amount of technical expertise, but also the ability to formulate a sales strategy to explain the value within each client opportunity.",
+                  author: "Chris Cullen",
+                  title: "Senior Sales Manager — Progress Software",
+                  context: "Sales Leadership",
+                },
+              ].map((item) => (
+                <article
+                  key={item.author}
+                  className="rounded-2xl border-l-2 border-cyan-400 bg-slate-900/70 p-5"
+                >
+                  <h3 className="text-lg font-bold text-white">
+                    {item.theme}
+                  </h3>
+
+                  <p className="mt-4 text-sm italic leading-6 text-slate-300">
+                    “{item.quote}”
+                  </p>
+
+                  <div className="mt-5">
+                    <p className="text-sm font-semibold text-white">
+                      {item.author}
+                    </p>
+
+                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
+                      {item.title}
+                    </p>
+
+                    <p className="mt-1 text-xs text-slate-400">
+                      {item.context}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <p className="mt-6 text-xs leading-5 text-slate-400">
+              Excerpts from public LinkedIn recommendations provided by former
+              managers, colleagues, and cross-functional partners.
+            </p>
+          </div>
+        </section>
+
+        <section className="mx-auto mt-16 max-w-5xl">
           <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
             <h2 className="text-2xl font-bold text-white">
               Professional Toolkit
