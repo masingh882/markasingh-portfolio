@@ -220,57 +220,6 @@ export default function ExperiencePage() {
 
             <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
-                Ipswitch, Inc.
-              </p>
-              <h2 className="text-2xl font-bold text-white">
-                Foundation Years — R&D Embedded Leadership
-              </h2>
-              <p className="mt-2 text-sm font-semibold text-cyan-300">
-                Technical Support Team Manager • 2002 – 2008
-              </p>
-
-              <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
-                <p>
-                  Shortly after joining Ipswitch, I was promoted into a Team
-                  Lead role and became part of the customer-to-engineering
-                  information flow connecting support, development, QA,
-                  documentation, product management, and engineering leadership.
-                </p>
-
-                <p>
-                  At the time, I assumed this level of proximity to product
-                  development was normal. Only later did I realize how unusual it
-                  was for technical support to operate inside a Research &
-                  Development organization rather than outside of it.
-                </p>
-
-                <p>
-                  My role extended beyond technical troubleshooting. I helped
-                  establish investigative workflows, escalation processes, defect
-                  triage practices, and communication frameworks that translated
-                  customer experiences into actionable engineering intelligence.
-                </p>
-              </div>
-
-              <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
-                <li>• Promoted to Team Lead within four months.</li>
-                <li>
-                  • Helped establish support processes during Ipswitch&apos;s
-                  migration into an R&D-centered support model.
-                </li>
-                <li>
-                  • Served as a Voice of Customer representative within product
-                  development workflows.
-                </li>
-                <li>
-                  • Worked directly with development, QA, documentation, and
-                  product management teams.
-                </li>
-              </ul>
-            </article>
-
-            <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
                 Ipswitch, Inc. / Progress Software
               </p>
               <h2 className="text-2xl font-bold text-white">
@@ -317,6 +266,57 @@ export default function ExperiencePage() {
                 <li>
                   • Led support readiness and knowledge transfer following
                   MOVEit and Dorian acquisitions.
+                </li>
+              </ul>
+            </article>
+
+            <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                Ipswitch, Inc.
+              </p>
+              <h2 className="text-2xl font-bold text-white">
+                Foundation Years — R&D Embedded Leadership
+              </h2>
+              <p className="mt-2 text-sm font-semibold text-cyan-300">
+                Technical Support Team Manager • 2002 – 2008
+              </p>
+
+              <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
+                <p>
+                  Shortly after joining Ipswitch, I was promoted into a Team
+                  Lead role and became part of the customer-to-engineering
+                  information flow connecting support, development, QA,
+                  documentation, product management, and engineering leadership.
+                </p>
+
+                <p>
+                  At the time, I assumed this level of proximity to product
+                  development was normal. Only later did I realize how unusual it
+                  was for technical support to operate inside a Research &
+                  Development organization rather than outside of it.
+                </p>
+
+                <p>
+                  My role extended beyond technical troubleshooting. I helped
+                  establish investigative workflows, escalation processes, defect
+                  triage practices, and communication frameworks that translated
+                  customer experiences into actionable engineering intelligence.
+                </p>
+              </div>
+
+              <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
+                <li>• Promoted to Team Lead within four months.</li>
+                <li>
+                  • Helped establish support processes during Ipswitch&apos;s
+                  migration into an R&D-centered support model.
+                </li>
+                <li>
+                  • Served as a Voice of Customer representative within product
+                  development workflows.
+                </li>
+                <li>
+                  • Worked directly with development, QA, documentation, and
+                  product management teams.
                 </li>
               </ul>
             </article>
@@ -440,8 +440,16 @@ export default function ExperiencePage() {
           <div className="grid gap-4 md:grid-cols-3">
             {[
               ["/", "Home", "Return to the main narrative."],
-              ["/portfolio", "Portfolio", "Explore the stories behind the experience."],
-              ["/evidence", "Evidence", "Review public presentations and technical work."],
+              [
+                "/portfolio",
+                "Portfolio",
+                "Explore the stories behind the experience.",
+              ],
+              [
+                "/evidence",
+                "Evidence",
+                "Review public presentations and technical work.",
+              ],
             ].map(([href, title, desc]) => (
               <Link
                 key={href}
