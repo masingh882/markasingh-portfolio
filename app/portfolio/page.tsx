@@ -50,6 +50,28 @@ const portfolioPillars = [
   },
 ];
 
+const fieldValidationCards = [
+  {
+    theme: "Technical Communication",
+    quote:
+      "Mark and I have completed multiple webinars, blog posts, and demos for public consumption. Mark's product knowledge and light touch bring value to everything we've worked on.",
+    author: "Larry Goldman",
+    href: "https://www.linkedin.com/in/ligoldman/",
+    title:
+      "Executive Product Marketing Leader | Go-To-Market Strategy | Competitive Positioning | Revenue Growth",
+    context: "Webinar, Content & Product Marketing Partner",
+  },
+  {
+    theme: "Field Execution & Customer Engagement",
+    quote:
+      "Mark was a great asset with webinars and content creation. He would always raise his hand to help with events including setup, teardown, demos, badge scanning, and customer engagement. He has a vast understanding of technology and product that is unmatched.",
+    author: "Alexandra Cassandro Arora",
+    href: "https://www.linkedin.com/in/alexandra-cassandro-arora/",
+    title: "Demand Gen Wizard",
+    context: "Demand Generation & Field Events Partner",
+  },
+];
+
 export default function PortfolioPage() {
 return (
   <>
@@ -173,7 +195,65 @@ className="flex h-full flex-col rounded-2xl border border-slate-700/70 bg-slate-
             </article>
           ))}
         </div>
+                <div className="mt-12 rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+            Field Validation
+          </p>
+
+          <h2 className="text-2xl font-bold text-white">
+            Public Communication & Industry Presence
+          </h2>
+
+          <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
+            Field work often extends beyond formal presentations. It includes
+            customer conversations, event execution, technical demonstrations,
+            partner enablement, product storytelling, and translating technical
+            value in rooms where customers, analysts, marketers, sales teams,
+            and product leaders are all listening.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {fieldValidationCards.map((item) => (
+              <article
+                key={item.author}
+                className="rounded-2xl border-l-2 border-cyan-400 bg-slate-950/40 p-5"
+              >
+                <h3 className="text-lg font-bold text-white">{item.theme}</h3>
+
+                <p className="mt-4 text-sm italic leading-6 text-slate-300">
+                  “{item.quote}”
+                </p>
+
+                <div className="mt-5">
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-white transition hover:text-cyan-300"
+                  >
+                    {item.author} ↗
+                  </a>
+
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
+                    {item.title}
+                  </p>
+
+                  <p className="mt-1 text-xs text-slate-400">
+                    {item.context}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-6 text-xs leading-5 text-slate-400">
+            Excerpts from public LinkedIn recommendations provided by
+            cross-functional partners involved in webinars, events, content,
+            and product communication.
+          </p>
+        </div>
       </section>
+
 
       <section className="mx-auto mt-20 max-w-6xl">
         <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
