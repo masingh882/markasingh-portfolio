@@ -48,6 +48,25 @@ const evidenceCards = [
   },
 ];
 
+const validationCards = [
+  {
+    theme: "Technical Communication",
+    quote:
+      "Mark and I have completed multiple webinars, blog posts, and demos for public consumption. Mark's product knowledge and light touch bring value to everything we've worked on.",
+    author: "Larry Goldman",
+    title: "Executive Product Marketing Leader",
+    context: "Product Marketing Partner",
+  },
+  {
+    theme: "Field Execution & Customer Engagement",
+    quote:
+      "Mark was a great asset with webinars and content creation. He would always raise his hand to help with events including setup, teardown, demos, badge scanning, and customer engagement. He has a vast understanding of technology and product that is unmatched.",
+    author: "Alexandra Cassandro Arora",
+    title: "Demand Generation",
+    context: "Marketing & Events Partner",
+  },
+];
+
 export default function EvidencePage() {
   return (
     <>
@@ -120,6 +139,63 @@ export default function EvidencePage() {
             </article>
           ))}
         </div>
+
+        <section className="mt-12">
+          <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+              Independent Validation
+            </p>
+
+            <h2 className="text-2xl font-bold text-white">
+              Public Communication & Industry Presence
+            </h2>
+
+            <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
+              Public work can be measured through webinars, articles,
+              demonstrations, workshops, and conference participation. These
+              perspectives come from marketing and demand-generation leaders who
+              partnered with me on customer-facing initiatives and public
+              technical content.
+            </p>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {validationCards.map((item) => (
+                <article
+                  key={item.author}
+                  className="rounded-2xl border-l-2 border-cyan-400 bg-slate-950/40 p-5"
+                >
+                  <h3 className="text-lg font-bold text-white">
+                    {item.theme}
+                  </h3>
+
+                  <p className="mt-4 text-sm italic leading-6 text-slate-300">
+                    “{item.quote}”
+                  </p>
+
+                  <div className="mt-5">
+                    <p className="text-sm font-semibold text-white">
+                      {item.author}
+                    </p>
+
+                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
+                      {item.title}
+                    </p>
+
+                    <p className="mt-1 text-xs text-slate-400">
+                      {item.context}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <p className="mt-6 text-xs leading-5 text-slate-400">
+              Excerpts from public LinkedIn recommendations provided by
+              cross-functional partners involved in webinars, events, content,
+              and product communication.
+            </p>
+          </div>
+        </section>
 
         <div className="mt-10 rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
           <h3 className="text-lg font-bold text-white">Strategic Perspective</h3>
