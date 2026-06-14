@@ -153,16 +153,11 @@ export default function ExperiencePage() {
             </p>
 
             <h2 className="text-2xl font-bold text-white">
-              Perspectives From Along the Journey
+              Professional Perspectives
             </h2>
 
             <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
-              The observations below come from leaders and partners who worked
-              with me across solutions engineering, sales, quality assurance,
-              product development, and customer-facing teams. Different roles,
-              different eras, same recurring themes: trust, technical depth,
-              customer advocacy, and cross-functional alignment.
-            </p>
+The observations below come from leaders and partners who worked with me across solutions engineering, sales, quality assurance, product development, and customer-facing teams. Different roles, different organizations, and different stages of my career—yet the same recurring themes emerge: trust, technical depth, customer advocacy, and cross-functional alignment.            </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {recommendationCards.map((item) => (
