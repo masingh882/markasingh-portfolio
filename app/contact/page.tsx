@@ -55,7 +55,7 @@ export default function ContactPage() {
               Topics I Enjoy Discussing
             </h2>
 
-            <div className="mt-6 grid gap-3 text-sm leading-6 text-slate-300 md:grid-cols-2">
+            <div className="mt-6 grid gap-3 text-base leading-6 text-slate-300 md:grid-cols-2">
               <ul className="space-y-2">
                 <li>• Solutions Engineering Leadership</li>
                 <li>• Customer Success & Technology Adoption</li>
@@ -125,6 +125,15 @@ export default function ContactPage() {
         <p>Coral Springs, Florida</p>
 
         <div className="space-y-2 pt-2">
+          <a
+  href="https://calendly.com/markasingh"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/60 bg-cyan-400/10 px-5 py-2.5 text-sm font-semibold text-cyan-300 transition hover:border-cyan-300 hover:bg-cyan-400/20 hover:text-cyan-200"
+>
+  <span>Start a Conversation</span>
+  <span aria-hidden="true">↗</span>
+</a>
           <p>
             Email:{" "}
             <a
@@ -191,9 +200,9 @@ export default function ContactPage() {
       <Image
         src="/images/headshots/mark-singh-contact.jpg"
         alt="Mark A. Singh"
-        width={680}
+        width={640}
         height={820}
-        className="h-[420px] w-full object-cover object-center"
+className="h-[380px] w-full object-cover object-center"
         priority
       />
     </div>
