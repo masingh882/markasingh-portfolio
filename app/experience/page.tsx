@@ -153,7 +153,7 @@ export default function ExperiencePage() {
             </p>
 
             <h2 className="text-2xl font-bold text-white">
-              LEADERSHIP & PEER Perspectives
+              Leadership & Peer Perspectives
             </h2>
 
             <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
