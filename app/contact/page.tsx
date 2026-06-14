@@ -52,7 +52,7 @@ export default function ContactPage() {
         <section className="mx-auto mt-16 max-w-5xl">
           <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
             <h2 className="text-2xl font-bold text-white">
-              Topics I Enjoy Discussing
+              Areas of Focus
             </h2>
 
             <div className="mt-6 grid gap-3 text-base leading-6 text-slate-300 md:grid-cols-2">
