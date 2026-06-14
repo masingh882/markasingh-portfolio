@@ -15,15 +15,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mark A. Singh",
+  metadataBase: new URL("https://www.markasingh.com"),
+
+  title: {
+    default: "Mark A. Singh | Helping Organizations Navigate Technology Change",
+    template: "%s | Mark A. Singh",
+  },
+
   description:
-    "Helping organizations navigate technology change through customer understanding, technical leadership, and business alignment.",
+    "Senior Solutions Engineer helping organizations navigate technology change through customer understanding, technical leadership, enterprise software experience, and business alignment.",
+
+  applicationName: "Mark A. Singh",
+  authors: [{ name: "Mark A. Singh" }],
+  creator: "Mark A. Singh",
+  publisher: "Mark A. Singh",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   openGraph: {
-    title: "Mark A. Singh",
+    title: "Mark A. Singh | Helping Organizations Navigate Technology Change",
     description:
-      "Helping organizations navigate technology change through customer understanding, technical leadership, and business alignment.",
+      "Professional portfolio of Mark A. Singh, Senior Solutions Engineer focused on connecting customers, technology teams, and business outcomes.",
+    url: "https://www.markasingh.com",
+    siteName: "Mark A. Singh",
     type: "website",
+    images: [
+      {
+        url: "/images/og/markasingh-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mark A. Singh | Helping Organizations Navigate Technology Change",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Mark A. Singh | Helping Organizations Navigate Technology Change",
+    description:
+      "Senior Solutions Engineer focused on connecting customers, technology teams, and business outcomes.",
+    images: ["/images/og/markasingh-og.jpg"],
   },
 };
 
@@ -40,7 +74,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         <BackToTopButton />
-         <Analytics />
+        <Analytics />
       </body>
     </html>
   );
