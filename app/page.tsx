@@ -27,12 +27,12 @@ export default function Home() {
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
 HELPING ORGANIZATIONS NAVIGATE TECHNOLOGY CHANGE            </p>
 
-            <h1 className="mb-6 text-5xl font-bold leading-tight">
-              Bridging Customers,
-              <br />
-              Technology & Business
-            </h1>
-
+<h1 
+className="text-5xl font-bold text-white">
+  Bridging <span className="text-cyan-400">Customers</span>,
+  <br />
+  Technology & Business
+</h1>
             <p className="max-w-3xl text-slate-300 leading-relaxed">
               The common thread throughout my work has been helping people
               navigate complexity. Whether working with administrators,
