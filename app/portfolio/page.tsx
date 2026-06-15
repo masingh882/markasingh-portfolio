@@ -109,7 +109,7 @@ return (
     </p>
 
 <h2 className="mt-3 text-4xl font-bold tracking-tight text-white">
-  The Technologies Changed. The Challenge Stayed the Same.
+Technology Changes. Human Challenges Don't.
 </h2>
 
 <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
@@ -259,7 +259,6 @@ return (
     ChatGPT • Gemini • AI-Assisted Research • Knowledge Synthesis • Guided Intelligence Framework Development
   </p>
 </article>
-```
 
   </div>
 

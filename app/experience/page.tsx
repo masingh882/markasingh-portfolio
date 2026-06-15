@@ -241,31 +241,50 @@ The observations below come from leaders and partners who worked with me across 
             Career Journey
           </p>
 
-          <h2 className="mb-8 text-2xl font-bold text-white">
-            Applying Those Principles Across Multiple Technology Eras
-          </h2>
+<h2 className="mb-8 text-2xl font-bold text-white">
+  The Career Experiences Behind the Perspective
+</h2>
+
 
           <div className="space-y-8">
             <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
               <h2 className="text-2xl font-bold text-white">
                 Gallivanting Travel & Independent Projects
               </h2>
+              
               <p className="mt-2 text-sm font-semibold text-cyan-300">
                 Founder • 2023 – Present
               </p>
+              <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
+  <p>
+    This period represents the convergence of many themes that have defined
+    my career: customer guidance, technology adoption, workflow design,
+    knowledge transfer, and decision support. Through Gallivanting Travel
+    and independent projects, I have been exploring how AI-assisted research,
+    structured guidance, and orchestration frameworks can help people move
+    from uncertainty to informed action.
+  </p>
+
+  <p>
+    Rather than focusing on AI as a standalone technology, my work has
+    centered on reducing ambiguity, improving decision quality, and creating
+    practical systems that help people navigate increasingly complex choices.
+  </p>
+</div>
               <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
-                <li>
-                  • Exploring guided intelligence, AI-assisted workflows, and
-                  structured decision-support systems.
-                </li>
-                <li>
-                  • Designing customer experiences focused on clarity, guidance,
-                  and workflow orchestration.
-                </li>
-                <li>
-                  • Applying modern AI technologies to operational and
-                  customer-facing business processes.
-                </li>
+              
+<li>
+  • Applying AI-assisted research, workflow design, and structured guidance
+  principles to real-world business challenges.
+</li>
+<li>
+  • Building customer experiences focused on clarity, decision support, and
+  reducing ambiguity.
+</li>
+<li>
+  • Exploring how modern AI technologies can improve understanding, adoption,
+  and operational outcomes.
+</li>
               </ul>
             </article>
 
@@ -274,6 +293,22 @@ The observations below come from leaders and partners who worked with me across 
               <p className="mt-2 text-sm font-semibold text-cyan-300">
                 Field Sales Engineer • 2022 – 2023
               </p>
+              <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
+  <p>
+    My time at iboss introduced me to the rapidly evolving world of cloud
+    security, Secure Access Service Edge (SASE), and Zero Trust
+    architectures. The role expanded my perspective beyond infrastructure
+    visibility into identity, access control, and modern security
+    transformation initiatives.
+  </p>
+
+  <p>
+    Working with organizations evaluating cloud-delivered security models
+    reinforced a lesson that would follow me throughout my career:
+    successful technology adoption depends as much on organizational
+    readiness, trust, and clarity as it does on the technology itself.
+  </p>
+</div>
               <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
                 <li>
                   • Supported SASE, Zero Trust, and cloud security
@@ -297,6 +332,22 @@ The observations below come from leaders and partners who worked with me across 
               <p className="mt-2 text-sm font-semibold text-cyan-300">
                 Senior Solutions Engineer • 2018 – 2022
               </p>
+              <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
+  <p>
+    Transitioning into Sales Engineering expanded my role from solving
+    technical problems to helping organizations evaluate strategic
+    technology decisions. I worked closely with executives, architects,
+    administrators, and technical teams to align business objectives with
+    platform capabilities across a wide range of industries.
+  </p>
+
+  <p>
+    The position combined technical expertise, customer education,
+    solution design, and executive communication. It also provided
+    opportunities to represent the organization publicly through webinars,
+    customer workshops, industry conferences, and Tech Field Day.
+  </p>
+</div>
               <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
                 <li>
                   • Led technical discovery, demonstrations, workshops,
@@ -332,18 +383,24 @@ The observations below come from leaders and partners who worked with me across 
 
               <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
                 <p>
-                  As the organization matured, my role evolved from direct R&D
-                  interaction toward enterprise escalation management, customer
-                  retention, product adoption, knowledge strategy, and
-                  cross-functional collaboration.
-                </p>
+As Ipswitch expanded through acquisitions, enterprise growth, and
+increasing product complexity, my responsibilities evolved from
+engineering-adjacent leadership into enterprise escalation
+management, customer advocacy, product adoption, and long-term
+customer success.
 
-                <p>
-                  Much of the work focused on helping customers achieve
-                  successful outcomes while balancing technical realities,
-                  product limitations, business expectations, and long-term
-                  relationships.
-                </p>
+I became a bridge between customer outcomes, product capabilities,
+and business objectives—helping organizations navigate complex
+technical challenges while ensuring they continued to realize value
+from their technology investments.
+
+This period reinforced a lesson that continues to influence how I
+approach leadership today: symptoms and root causes are rarely the
+same thing. Successful outcomes required understanding not only the
+technical issue, but also the operational, organizational, and
+business factors surrounding it.               
+ </p>
+
               </div>
 
               <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
@@ -381,44 +438,44 @@ The observations below come from leaders and partners who worked with me across 
                 Technical Support Team Manager • 2002 – 2008
               </p>
 
-              <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
-                <p>
-                  Shortly after joining Ipswitch, I was promoted into a Team
-                  Lead role and became part of the customer-to-engineering
-                  information flow connecting support, development, QA,
-                  documentation, product management, and engineering leadership.
-                </p>
+<div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
+  <p>
+Shortly after joining Ipswitch, I was promoted into a Team Lead role and later assumed multi-team management responsibilities as the organization expanded. As the company grew, I helped build the support organization through hiring, onboarding, coaching, mentoring, and developing new engineers.
+  </p>
 
-                <p>
-                  At the time, I assumed this level of proximity to product
-                  development was normal. Only later did I realize how unusual it
-                  was for technical support to operate inside a Research &
-                  Development organization rather than outside of it.
-                </p>
+  <p>
+    As the team grew, I worked to establish consistent investigative
+    methodologies, escalation processes, knowledge-sharing practices, and
+    customer communication standards. Developing people became as important as
+    solving technical problems. Success depended on creating an environment
+    where engineers could grow their skills, build confidence, and effectively
+    support increasingly complex customer environments.
+  </p>
 
-                <p>
-                  My role extended beyond technical troubleshooting. I helped
-                  establish investigative workflows, escalation processes, defect
-                  triage practices, and communication frameworks that translated
-                  customer experiences into actionable engineering intelligence.
-                </p>
-              </div>
+  <p>
+    At the same time, I became a key part of the customer-to-engineering information
+    flow connecting support, development, QA, documentation, product
+    management, and engineering leadership. Operating inside a Research &
+    Development organization provided a unique opportunity to translate customer
+    experiences into actionable engineering intelligence while helping teams
+    align around shared priorities and outcomes.
+  </p>
 
-              <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
-                <li>• Promoted to Team Lead within four months.</li>
-                <li>
-                  • Helped establish support processes during Ipswitch&apos;s
-                  migration into an R&D-centered support model.
-                </li>
-                <li>
-                  • Served as a Voice of Customer representative within product
-                  development workflows.
-                </li>
-                <li>
-                  • Worked directly with development, QA, documentation, and
-                  product management teams.
-                </li>
-              </ul>
+  <p>
+Looking back, this period established the foundation for how I approach leadership today: investing in people, creating clarity, building alignment, and helping organizations navigate complexity through shared understanding.  
+</p>
+</div>
+<ul className="mt-5 space-y-3 text-sm text-slate-300">
+  <li>• Promoted to Team Lead within four months and later advanced into multi-team leadership responsibilities.</li>
+
+  <li>• Recruited, onboarded, trained, coached, and developed new support engineers during periods of organizational growth.</li>
+
+  <li>• Established support processes, escalation frameworks, and knowledge-sharing practices within an R&D-centered support organization.</li>
+
+  <li>• Served as a Voice of Customer representative within engineering and product development workflows.</li>
+
+  <li>• Worked directly with development, QA, documentation, product management, and engineering leadership teams.</li>
+</ul>
             </article>
           </div>
         </section>
