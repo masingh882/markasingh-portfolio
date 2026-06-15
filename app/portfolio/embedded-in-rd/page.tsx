@@ -128,6 +128,25 @@ export default function EmbeddedInRdPage() {
           </div>
         </section>
 
+                <section className="mx-auto mt-12 max-w-4xl">
+          <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
+            <h2 className="text-lg font-bold text-white">Related Story</h2>
+
+            <p className="mt-3 text-sm leading-6 text-slate-300">
+              Many of the lessons learned inside R&D eventually evolved into a
+              broader role translating between customers, engineering teams,
+              product groups, and business stakeholders.
+            </p>
+
+            <Link
+              href="/portfolio/bridging-customers-and-engineering"
+              className="mt-4 inline-flex rounded-full border border-cyan-500/60 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-cyan-200"
+            >
+              Read: Bridging Customers and Engineering →
+            </Link>
+          </div>
+        </section>
+
         <section className="mx-auto mt-12 flex max-w-4xl flex-col gap-4 border-t border-slate-800 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <Link
             href="/portfolio"

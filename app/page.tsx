@@ -60,26 +60,26 @@ HELPING ORGANIZATIONS NAVIGATE TECHNOLOGY CHANGE            </p>
             Technology Changes. Human Challenges Don't.
           </h2>
 
-          <p className="max-w-4xl text-slate-300 leading-relaxed">
-            For more than twenty-five years, I have watched organizations adapt
-            to wave after wave of technology transformation.
-          </p>
+<p className="max-w-4xl text-slate-300 leading-relaxed">
+  For more than twenty-five years, I have worked through multiple waves
+  of technology transformation—from client/server infrastructure and web
+  adoption to cloud services, cybersecurity modernization, and artificial
+  intelligence.
+</p>
 
-          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            The technologies changed dramatically. The challenges organizations
-            faced were often similar. Every new wave created
-            opportunity, pressure, uncertainty, competing priorities, and
-            questions about how to successfully adopt what came next.
-          </p>
+<p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+  Every wave introduced new platforms, new capabilities, and new ways of
+  working. The technology changed dramatically. The organizational
+  challenges often remained the same: understanding complexity, aligning
+  stakeholders, reducing ambiguity, and helping people move forward with
+  confidence.
+</p>
 
-          <p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
-            Whether the conversation was about web applications, infrastructure
-            visibility, cloud adoption, cybersecurity modernization, or
-            artificial intelligence, success was rarely determined by technology
-            alone. Success depended on understanding the technology, aligning it
-            with business objectives, reducing ambiguity, and helping people
-            confidently move forward.
-          </p>
+<p className="mt-4 max-w-4xl text-slate-400 leading-relaxed">
+  The challenge was rarely the technology itself. Success depended on
+  understanding how technology fit into business objectives, operational
+  realities, customer needs, and organizational readiness.
+</p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className={cardClass}>
@@ -100,9 +100,11 @@ HELPING ORGANIZATIONS NAVIGATE TECHNOLOGY CHANGE            </p>
             <div className={cardClass}>
               <h3 className="mb-3 text-xl font-semibold">Web Adoption</h3>
               <p className="text-slate-400">
-                Businesses and software vendors raced toward the web as
-                customers demanded online access and connected experiences.
-              </p>
+<p className="text-slate-400">
+  Organizations began transforming business processes and customer
+  experiences through web-based applications, creating new opportunities
+  alongside new adoption challenges.
+</p>              </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-300">
                 <li>• Internet transformation</li>
                 <li>• Web-enabled applications</li>
@@ -160,9 +162,12 @@ HELPING ORGANIZATIONS NAVIGATE TECHNOLOGY CHANGE            </p>
                 Artificial Intelligence
               </h3>
               <p className="text-slate-400">
-                Organizations are evaluating how AI fits into existing workflows
-                while balancing opportunity, risk, and adoption.
-              </p>
+Artificial intelligence is accelerating research, learning, and
+  decision-making. As with every technology wave before it, success
+  depends less on the tools themselves and more on helping people
+  navigate complexity, reduce ambiguity, and apply technology with
+  confidence.
+                </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-300">
                 <li>• AI adoption</li>
                 <li>• Workflow integration</li>

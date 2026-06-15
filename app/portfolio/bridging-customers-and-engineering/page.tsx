@@ -185,7 +185,7 @@ export default function BridgingCustomersAndEngineeringPage() {
   </Link>
 
   <Link
-    href="/portfolio/supporting-technology-transitions"
+    href="/portfolio/developing-people-building-teams"
     className="inline-flex rounded-full border border-cyan-500/60 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-cyan-200"
   >
     Next Story →

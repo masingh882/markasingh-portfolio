@@ -6,34 +6,35 @@ import { industryPresence } from "../data/industryPresence";
 
 
 const portfolioPillars = [
-  {
-    title: "Embedded in Research & Development",
-    hook: "Most support organizations operate outside engineering. Mine didn't.",
-    description:
-"Working inside a broader R&D organization provided direct exposure to engineering, quality assurance, product management, documentation, and customer feedback loops—offering a unique perspective on how products evolve and how customer reality shapes technical decisions.",
+{
+  title: "Embedded in Research & Development",
+  hook: "Where customer reality met engineering decisions.",
+  description:
+    "Working inside a broader R&D organization provided direct exposure to engineering, quality assurance, product management, documentation, and customer feedback loops. It also required translating customer experiences into actionable information for engineering teams, creating alignment across groups with different priorities and perspectives.",
+  themes: [
+    "Voice of Customer",
+    "Engineering Collaboration",
+    "Product Feedback",
+    "Technical Translation",
+    "Cross-Functional Leadership",
+  ],
+  href: "/portfolio/embedded-in-rd",
+},
+{
+  title: "Developing People & Building Teams",
+  hook: "Leadership is measured by the people you develop.",
+
+description:
+  "Led multi-product technical support organizations through hiring, talent development, organizational change, acquisitions, and cross-functional collaboration across support, engineering, product, and business teams.",
     themes: [
-      "Voice of Customer",
-      "Engineering Collaboration",
-      "Product Feedback",
-      "Release Validation",
-      "Operational Intelligence",
-    ],
-    href: "/portfolio/embedded-in-rd",
-  },
-  {
-    title: "Bridging Customers and Engineering",
-    hook: "Many technology challenges are ultimately translation challenges.",
-    description:
-      "Throughout my career, I frequently operated between customers, support teams, engineering organizations, product groups, and business stakeholders. The goal was rarely just solving a technical issue. The goal was creating shared understanding.",
-    themes: [
-      "Customer Advocacy",
-      "Technical Translation",
-      "Cross-Functional Leadership",
-      "Escalation Management",
-      "Business Alignment",
-    ],
-    href: "/portfolio/bridging-customers-and-engineering",
-  },
+    "People Leadership",
+    "Talent Development",
+    "Team Advocacy",
+    "Organizational Change",
+    "Cross-Functional Alignment",
+  ],
+  href: "/portfolio/developing-people-building-teams",
+},
   {
     title: "Supporting Technology Transitions",
     hook: "Technology evolves. Organizations adapt.",
@@ -100,6 +101,192 @@ return (
           customer advocacy, and technology adoption today.
         </p>
       </section>
+
+<section className="mx-auto mt-24 max-w-5xl">
+  <div className="mb-12">
+    <p className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+      Technology Evolution
+    </p>
+
+<h2 className="mt-3 text-4xl font-bold tracking-tight text-white">
+  The Technologies Changed. The Challenge Stayed the Same.
+</h2>
+
+<p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
+  Throughout my career, I have worked through multiple waves of technology
+  transformation—from client/server infrastructure and network monitoring
+  to cybersecurity, cloud services, and artificial intelligence.
+</p>
+
+<p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">
+  While the tools evolved, the underlying challenge remained remarkably
+  consistent: helping people understand, adopt, and operationalize change.
+</p>
+
+  </div>
+
+  <div className="space-y-8">
+
+<article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+    1990s
+  </p>
+
+  <h3 className="mt-2 text-2xl font-bold text-white">
+    Client / Server & Messaging
+  </h3>
+
+  <p className="mt-2 text-sm font-semibold text-cyan-300">
+    Learning how systems work together.
+  </p>
+
+  <p className="mt-4 text-sm leading-6 text-slate-300">
+    My early career focused on the infrastructure powering business
+    communication and operations. Supporting messaging systems,
+    authentication services, file transfer platforms, and Windows
+    environments provided a foundation in reliability, troubleshooting,
+    and operational discipline.
+  </p>
+
+  <p className="mt-4 text-sm text-slate-400">
+    Windows Server • Active Directory • IMail • WS_FTP • SMTP • DNS • TCP/IP
+  </p>
+</article>
+
+<article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+    2000s
+  </p>
+
+  <h3 className="mt-2 text-2xl font-bold text-white">
+    Infrastructure Visibility
+  </h3>
+
+  <p className="mt-2 text-sm font-semibold text-cyan-300">
+    You can't manage what you can't see.
+  </p>
+
+  <p className="mt-4 text-sm leading-6 text-slate-300">
+    As organizations became increasingly dependent on technology,
+    operational visibility became a strategic requirement. Monitoring,
+    alerting, performance analytics, and infrastructure telemetry evolved
+    from technical tools into business-critical capabilities.
+  </p>
+
+<p className="mt-4 text-sm leading-6 text-slate-300">
+  This period taught me that symptoms and root causes are rarely the same thing.
+  The ability to separate observation from explanation became one of the most
+  valuable lessons of my career and continues to influence how I approach
+  troubleshooting, leadership, customer conversations, and technology adoption.
+</p>
+
+  <p className="mt-4 text-sm text-slate-400">
+    WhatsUp Gold • SNMP • WMI • SQL Server • VMware • Network Monitoring • Log Management
+  </p>
+</article>
+
+<article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+    2010s
+  </p>
+
+  <h3 className="mt-2 text-2xl font-bold text-white">
+    Integration & Automation
+  </h3>
+
+  <p className="mt-2 text-sm font-semibold text-cyan-300">
+    Systems became ecosystems.
+  </p>
+
+  <p className="mt-4 text-sm leading-6 text-slate-300">
+    Monitoring systems, service desks, collaboration tools, databases,
+    and business applications increasingly needed to exchange information
+    and automate workflows. Success became less about individual products
+    and more about how those products worked together.
+  </p>
+
+  <p className="mt-4 text-sm text-slate-400">
+    REST APIs • PowerShell • ServiceNow • Jira • Slack • Microsoft Teams • Workflow Automation
+  </p>
+</article>
+
+<article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+    Late 2010s – Early 2020s
+  </p>
+
+  <h3 className="mt-2 text-2xl font-bold text-white">
+    Security Modernization
+  </h3>
+
+  <p className="mt-2 text-sm font-semibold text-cyan-300">
+    Visibility evolved into protection.
+  </p>
+
+  <p className="mt-4 text-sm leading-6 text-slate-300">
+    As organizations moved beyond traditional network boundaries,
+    priorities shifted toward identity, secure access, risk reduction,
+    and continuous validation. Security became a business conversation,
+    not simply a technical one.
+  </p>
+
+  <p className="mt-4 text-sm text-slate-400">
+    MOVEit • Secure File Transfer • Zero Trust • SASE • CASB • DLP
+  </p>
+</article>
+
+<article className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+    Today
+  </p>
+
+  <h3 className="mt-2 text-2xl font-bold text-white">
+    Guided Intelligence
+  </h3>
+
+  <p className="mt-2 text-sm font-semibold text-cyan-300">
+    Reducing ambiguity at scale.
+  </p>
+
+  <p className="mt-4 text-sm leading-6 text-slate-300">
+    Artificial intelligence has accelerated research, learning, and
+    decision-making. My focus is not AI for its own sake, but how
+    structured guidance, knowledge synthesis, and human-centered workflows
+    help people navigate increasingly complex technology landscapes.
+  </p>
+
+  <p className="mt-4 text-sm text-slate-400">
+    ChatGPT • Gemini • AI-Assisted Research • Knowledge Synthesis • Guided Intelligence Framework Development
+  </p>
+</article>
+```
+
+  </div>
+
+  <div className="mt-12 rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+    <h3 className="text-lg font-bold text-white">
+      Why This Matters
+    </h3>
+
+
+<p className="mt-4 text-sm leading-6 text-slate-300">
+  Over three decades, the platforms changed repeatedly. The common thread
+  was never the technology itself.
+</p>
+
+<p className="mt-4 text-sm leading-6 text-slate-300">
+  The challenge was helping people understand it, trust it, adopt it,
+  operationalize it, and align it with meaningful business outcomes.
+</p>
+
+<p className="mt-4 text-sm leading-6 text-slate-300">
+  That lesson remains just as relevant in the age of artificial
+  intelligence as it was during the client/server era.
+</p>
+
+  </div>
+</section>
+
 
       <section className="mx-auto mt-20 max-w-6xl">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
