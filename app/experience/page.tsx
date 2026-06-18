@@ -245,47 +245,30 @@ The observations below come from leaders and partners who worked with me across 
   The Career Experiences Behind the Perspective
 </h2>
 
-
           <div className="space-y-8">
             <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
               <h2 className="text-2xl font-bold text-white">
-                Gallivanting Travel & Independent Projects
+                Entrepreneurial Ventures & Business Building
               </h2>
               
               <p className="mt-2 text-sm font-semibold text-cyan-300">
-                Founder • 2023 – Present
+                Co-Founder • 2023 – Present
               </p>
               <div className="mt-5 space-y-4 text-sm leading-6 text-slate-300">
-  <p>
-    This period represents the convergence of many themes that have defined
-    my career: customer guidance, technology adoption, workflow design,
-    knowledge transfer, and decision support. Through Gallivanting Travel
-    and independent projects, I have been exploring how AI-assisted research,
-    structured guidance, and orchestration frameworks can help people move
-    from uncertainty to informed action.
-  </p>
-
-  <p>
-    Rather than focusing on AI as a standalone technology, my work has
-    centered on reducing ambiguity, improving decision quality, and creating
-    practical systems that help people navigate increasingly complex choices.
-  </p>
-</div>
-              <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-300">
-              
-<li>
-  • Applying AI-assisted research, workflow design, and structured guidance
-  principles to real-world business challenges.
-</li>
-<li>
-  • Building customer experiences focused on clarity, decision support, and
-  reducing ambiguity.
-</li>
-<li>
-  • Exploring how modern AI technologies can improve understanding, adoption,
-  and operational outcomes.
-</li>
-              </ul>
+<p> 
+  This chapter of my career has focused on applying the same principles that guided my work in enterprise technology—customer understanding, operational clarity, workflow design, and decision support—to building businesses from the ground up. 
+  </p> 
+  <p> As a co-founder of Mrs. Clean Inc. in Guyana, I helped establish a Local Content Certified business serving commercial and industrial customers. Building the company required navigating supplier relationships, operational processes, digital presence, and the realities of launching and growing a business in an emerging market.
+     </p>
+      <p> 
+        In parallel, I co-founded Gallivanting Travel, applying customer guidance, workflow design, and decision-support principles to create a more thoughtful and personalized travel planning experience. Through both ventures and independent initiatives, I have continued exploring how structured guidance, AI-assisted research, and thoughtful process design can help people move from uncertainty to informed action. 
+        </p> 
+        <p> Rather than focusing on AI as a standalone technology, my work has centered on reducing ambiguity, improving decision quality, and creating practical systems that help people navigate increasingly complex choices. 
+          </p> 
+          </div>
+           <ul 
+           className="mt-5 space-y-2 text-sm leading-6 text-slate-300"> 
+           <li> • Co-founded and helped launch Mrs. Clean Inc., a Guyanese Local Content Certified supplier serving commercial and industrial markets. </li> <li> • Co-founded Gallivanting Travel, designing customer guidance workflows, service delivery processes, and digital customer experiences. </li> <li> • Applied AI-assisted research, workflow design, and structured guidance principles to real-world business challenges. </li> </ul>
             </article>
 
             <article className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
