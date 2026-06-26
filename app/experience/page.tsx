@@ -65,7 +65,7 @@ const stackItems = [
 
   [
   "Public GitHub",
-  "A public GitHub profile and repository provide a visible artifact of modern development fluency, version control, AI-assisted workflows, and practical execution.",
+  "A public GitHub presence demonstrates familiarity with modern development workflows, version control, AI-assisted collaboration, and transparent technical execution. It complements—not replaces—traditional leadership and solutions engineering experience.",
 ],
 ];
 
