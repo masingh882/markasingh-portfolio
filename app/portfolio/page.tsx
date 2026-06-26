@@ -81,8 +81,10 @@ return (
           Portfolio
         </p>
 
-<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">          Behind the Work
-        </h1>
+<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
+  Behind the{" "}
+  <span className="text-cyan-300">Work</span>
+</h1>
 
         <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
           Some of the most meaningful contributions of my career were not

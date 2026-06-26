@@ -31,9 +31,10 @@ export default function ContactPage() {
             Contact
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
-            Let&apos;s Start a Conversation
-          </h1>
+<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
+  Let's Start the{" "}
+  <span className="text-cyan-300">Conversation</span>
+</h1>
 
           <div className="mt-8 max-w-4xl space-y-5 text-base leading-7 text-slate-300">
             <p>
@@ -155,7 +156,17 @@ export default function ContactPage() {
               View Profile ↗
             </a>
           </p>
-
+<p>
+  GitHub:{" "}
+  <a
+    href="https://github.com/masingh882"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-cyan-300 transition hover:text-cyan-200"
+  >
+    View Profile ↗
+  </a>
+</p>
           <p>
             Website:{" "}
             <a

@@ -58,9 +58,10 @@ export default function EvidencePage() {
           Evidence Library
         </p>
 
-        <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
-          The Work in Action
-        </h1>
+<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
+  Technology in{" "}
+  <span className="text-cyan-300">Action</span>
+</h1>
 
         <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
           Public examples of technical communication, customer education,

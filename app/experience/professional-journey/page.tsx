@@ -51,10 +51,10 @@ export default function ProfessionalJourneyPage() {
             Professional Journey
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
-            The Career Experiences Behind the{" "}
-            <span className="text-cyan-300">Perspective</span>
-          </h1>
+<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
+  The Career Behind the{" "}
+  <span className="text-cyan-300">Perspective</span>
+</h1>
 
           <p className="mt-6 text-xl font-semibold leading-8 text-cyan-300">
             Military Logistics • Enterprise Support • R&D Collaboration •

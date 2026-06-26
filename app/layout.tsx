@@ -14,6 +14,38 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Mark A. Singh",
+  url: "https://www.markasingh.com",
+  sameAs: [
+    "https://www.linkedin.com/in/markasingh",
+    "https://github.com/masingh882",
+    "https://www.gallivantingtravel.com",
+    "https://www.mrscleaninc.com",
+  ],
+  jobTitle: [
+    "Solutions Engineering Leader",
+    "Enterprise Solutions Engineer",
+    "Customer Technology Advisor",
+    "Technical Leadership Professional",
+  ],
+  knowsAbout: [
+    "Solutions Engineering",
+    "Technical Leadership",
+    "Customer Success",
+    "Technology Adoption",
+    "Cybersecurity",
+    "Zero Trust",
+    "SASE",
+    "Observability",
+    "AI-Assisted Workflows",
+    "Guided Intelligence",
+    "Digital Professional Identity",
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.markasingh.com"),
 
@@ -72,6 +104,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
         {children}
         <BackToTopButton />
         <Analytics />
