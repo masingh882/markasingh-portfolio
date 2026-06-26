@@ -95,10 +95,12 @@ export default function ExperiencePage() {
             Experience
           </p>
 
-Applying{" "}
-<span className="text-cyan-300">AI</span>{" "}
-to{" "}
-<span className="text-cyan-300">Business</span>
+<h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
+  Applying{" "}
+  <span className="text-cyan-300">AI</span>{" "}
+  to{" "}
+  <span className="text-cyan-300">Business</span>
+</h1>
 
           <p className="mt-6 max-w-4xl text-xl font-semibold leading-8 text-cyan-300">
             Using modern technology to compress the time between an idea and a
