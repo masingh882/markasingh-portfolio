@@ -111,7 +111,7 @@ return (
     </p>
 
 <h2 className="mt-3 text-4xl font-bold tracking-tight text-white">
-Technology Changes. Human Challenges Don't.
+Technology Changes. Human Challenges Don&apos;t.
 </h2>
 
 <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300">
@@ -165,7 +165,7 @@ Technology Changes. Human Challenges Don't.
   </h3>
 
   <p className="mt-2 text-sm font-semibold text-cyan-300">
-    You can't manage what you can't see.
+    You can&apos;t manage what you can&apos;t see.
   </p>
 
   <p className="mt-4 text-sm leading-6 text-slate-300">

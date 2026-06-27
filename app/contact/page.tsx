@@ -32,7 +32,7 @@ export default function ContactPage() {
           </p>
 
 <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
-  Let's Start the{" "}
+Let&apos;s Start the{" "}
   <span className="text-cyan-300">Conversation</span>
 </h1>
 

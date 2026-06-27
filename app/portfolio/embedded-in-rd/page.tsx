@@ -72,7 +72,7 @@ export default function EmbeddedInRdPage() {
           </h1>
 
           <p className="mt-6 text-xl font-semibold leading-8 text-cyan-300">
-            Most support organizations operate outside engineering. Mine didn't.
+            Most support organizations operate outside engineering. Mine didn&apos;t.
           </p>
 
           <p className="mt-6 text-base leading-7 text-slate-300">

@@ -538,6 +538,123 @@ export default function ProfessionalJourneyPage() {
           </div>
         </section>
 
+<section
+  id="product-lifecycle"
+  className="mx-auto mt-16 max-w-5xl scroll-mt-28"
+>
+    <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+      Full Product Lifecycle
+    </p>
+
+    <h2 className="text-3xl font-bold text-white">
+      A Perspective Built Across the Entire{" "}
+      <span className="text-cyan-300">Lifecycle</span>
+    </h2>
+
+    <p className="mt-5 max-w-4xl text-xl font-semibold leading-8 text-white">
+      Twenty-two years inside an enterprise software company provided repeated
+      exposure to the complete product lifecycle — from product vision through
+      customer adoption and continuous improvement.
+    </p>
+
+    <p className="mt-5 max-w-4xl text-sm leading-7 text-slate-300">
+      Throughout my career at Ipswitch and Progress Software, I experienced far
+      more than a progression of technical roles. I worked across enterprise
+      support, leadership, engineering collaboration, customer education,
+      solutions engineering, and customer advocacy, providing visibility into
+      how enterprise software is conceived, delivered, adopted, supported, and
+      improved.
+    </p>
+
+    <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-300">
+      Every major release reinforced the same lesson. Engineering celebrated new
+      capabilities. Customers experienced learning curves, workflow changes,
+      documentation questions, usability challenges, configuration issues, and
+      occasionally new defects. Support became one of the first places where the
+      reality of customer adoption could be observed.
+    </p>
+  </div>
+
+  <div className="mt-10 rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+    <p className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+      The Adoption Loop
+    </p>
+
+    <div className="grid gap-4 md:grid-cols-2">
+      {[
+        ["Customer Problems", "Real-world needs, friction, and operational challenges."],
+        ["Product Vision", "Ideas shaped into product direction and capability."],
+        ["Engineering", "Features designed, built, tested, and refined."],
+        ["Quality Assurance", "Validation before customers experience the release."],
+        ["Documentation", "Guidance that helps customers understand what changed."],
+        ["Product Release", "New capability enters the customer environment."],
+        ["Customer Adoption", "Customers begin learning, configuring, and applying the change."],
+        ["Support & Escalations", "The reality of adoption becomes visible through questions, confusion, defects, and unexpected use cases."],
+        ["Training & Education", "Webinars, workshops, demos, and enablement help customers build confidence."],
+        ["Solutions Engineering", "Customer needs, technical fit, and business value are translated into practical guidance."],
+        ["Customer Feedback", "Patterns from the field inform product priorities and improvements."],
+        ["Product Improvements", "The cycle continues through refinement, prioritization, and the next release."],
+      ].map(([title, text], index) => (
+        <div
+          key={title}
+          className="rounded-2xl border border-slate-700/70 bg-[#020617] p-5 transition hover:border-cyan-500/60 hover:bg-cyan-950/20"
+        >
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+            {String(index + 1).padStart(2, "0")}
+          </p>
+
+          <h3 className="text-lg font-bold text-white">{title}</h3>
+
+          <p className="mt-3 text-sm leading-6 text-slate-300">{text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-3">
+    {[
+      [
+        "Technology creates possibility.",
+        "Engineering builds new capabilities, but innovation alone does not guarantee adoption.",
+      ],
+      [
+        "Customers reveal reality.",
+        "Learning curves, workflow changes, usability feedback, documentation gaps, and support interactions reveal how technology is actually experienced.",
+      ],
+      [
+        "Organizations succeed through clarity.",
+        "Successful adoption depends on communication, customer understanding, stakeholder alignment, and confidence through change.",
+      ],
+    ].map(([title, text]) => (
+      <div
+        key={title}
+        className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6"
+      >
+        <h3 className="text-lg font-bold text-white">{title}</h3>
+        <p className="mt-3 text-sm leading-6 text-slate-300">{text}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="mt-10 rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+    <p className="text-sm leading-7 text-slate-300">
+      Artificial intelligence represents the latest technology transition I have
+      experienced throughout my career. While the technologies continue to
+      evolve, the organizational patterns remain familiar. The challenge has
+      never been technology alone — it has consistently been helping
+      organizations understand change, adopt it with confidence, and realize
+      its business value.
+    </p>
+
+    <p className="mt-5 text-lg font-semibold leading-8 text-white">
+      Seeing the entire lifecycle taught me that software succeeds through adoption, not deployment.
+    </p>
+  </div>
+</section>
+
+
+
         <section className="mx-auto mt-12 max-w-5xl">
           <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
             <h2 className="text-2xl font-bold text-white">
