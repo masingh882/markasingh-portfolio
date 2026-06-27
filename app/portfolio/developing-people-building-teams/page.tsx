@@ -73,7 +73,7 @@ export default function DevelopingPeopleBuildingTeamsPage() {
           </p>
 
           <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
-            Developing People & Building Teams
+            Developing <span className="text-cyan-300">People</span> &amp; Building Teams
           </h1>
 
           <p className="mt-6 text-xl font-semibold leading-8 text-cyan-300">

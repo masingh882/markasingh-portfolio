@@ -13,8 +13,8 @@ export default function BridgingCustomersAndEngineeringPage() {
             Portfolio
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
-            Bridging Customers and Engineering
+          <h1 className="text-5xl font-bold tracking-tight text-white">
+            Bridging <span className="text-cyan-300">Customers</span> and Engineering
           </h1>
 
           <p className="mt-8 text-xl font-semibold text-cyan-300">

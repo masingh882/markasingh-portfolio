@@ -29,11 +29,11 @@ const caseStudies = [
     label: "Professional Representation",
     href: "https://www.markasingh.com",
     challenge:
-      "A traditional resume was not enough to accurately represent decades of work across enterprise support, engineering collaboration, solutions engineering, cybersecurity, leadership, and entrepreneurship.",
-    approach:
-      "Built a modern professional portfolio using AI-assisted content development, structured storytelling, GitHub, SEO, Open Graph assets, and public evidence to create a clearer digital representation of the work.",
+    "Traditional professional profiles no longer provided enough context to accurately represent decades of work across enterprise support, engineering collaboration, solutions engineering, cybersecurity, leadership, and entrepreneurship in the age of AI.",
+   approach:
+      "Built a modern professional platform using AI-assisted research, structured content development, GitHub, SEO, Open Graph optimization, and public evidence to create a more accurate digital representation.",
     outcome:
-      "A more complete professional presence that gives recruiters, hiring managers, and business leaders better context before a conversation begins.",
+      "A more complete professional representation that gives recruiters, hiring managers, and business leaders better context before a conversation begins while improving how AI interprets the broader work.",
   },
 ];
 
@@ -333,10 +333,10 @@ Technology changes rapidly. Business value still depends on understanding the pr
           "The technologies have changed dramatically—from client/server infrastructure to cloud computing, cybersecurity, enterprise SaaS, and artificial intelligence. The underlying challenge has remained consistent: helping organizations understand complexity, align stakeholders, and confidently move toward better decisions.",
       },
       {
-        question: "Where is this work heading?",
-        answer:
-          "This platform documents an ongoing professional evolution. As AI becomes more deeply integrated into business workflows, my focus continues to be helping organizations combine human expertise with modern technology to improve customer engagement, business operations, and decision-making. Future initiatives continue building upon these same principles.",
-      },
+        question: "Where does this lead?",
+answer:
+  "This platform continues to evolve as I explore the intersection of technology, AI, customer engagement, and professional representation. As meaningful results emerge—from more accurate AI understanding to stronger professional conversations—they become part of the platform itself.\n\nMy long-term goal extends beyond documenting my own career. I believe every professional will eventually need to understand how AI interprets their digital presence, and I intend to document what works along the way.",
+},
     ].map((item) => (
       <details
         key={item.question}
