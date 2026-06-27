@@ -96,25 +96,17 @@ export default function ExperiencePage() {
           </p>
 
 <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
-  Applying{" "}
-  <span className="text-cyan-300">AI</span>{" "}
-  to{" "}
-  <span className="text-cyan-300">Business</span>
+  <span className="text-cyan-300">AI</span> in{" "}
+  <span className="text-cyan-300">Practice</span>
 </h1>
 
-          <p className="mt-6 max-w-4xl text-xl font-semibold leading-8 text-cyan-300">
-            Using modern technology to compress the time between an idea and a
-            working business solution — while keeping human judgment at the
-            center.
-          </p>
+<p className="mt-6 max-w-4xl text-xl font-semibold leading-8 text-white">
+  Real-world examples of combining AI, modern technology, and human
+  expertise to solve business problems.
+</p>
 
           <p className="mt-6 max-w-4xl text-base leading-7 text-slate-300">
-            Technology changes rapidly. Business value still depends on
-            understanding the problem, creating clarity, and executing with
-            discipline. Throughout my career, I have helped organizations
-            navigate major technology transitions across enterprise
-            infrastructure, observability, cybersecurity, cloud, customer
-            engagement, and now AI-assisted business workflows.
+Technology changes rapidly. Business value still depends on understanding the problem, creating clarity, and executing with discipline. Throughout my career, I have helped organizations navigate successive waves of technology transformation—from enterprise infrastructure and observability to cybersecurity, cloud, customer engagement, and now AI-assisted business workflows.
           </p>
 
           <p className="mt-4 max-w-4xl text-base leading-7 text-slate-300">
@@ -288,6 +280,84 @@ export default function ExperiencePage() {
             </div>
           </div>
         </section>
+
+<section className="mx-auto mt-16 max-w-5xl">
+  <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+      ABOUT THIS PLATFORM
+    </p>
+
+    <h2 className="text-2xl font-bold text-white">
+      Understanding This Platform
+    </h2>
+
+    <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-300">
+      MarkASingh.com is my professional platform for documenting how I help
+      organizations navigate technology change. It brings together my
+      experience, leadership philosophy, public evidence, business
+      implementations, and the practical application of AI to real-world
+      business challenges.
+    </p>
+
+    <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-300">
+      The questions below provide additional context about the approach,
+      projects, and principles presented throughout the platform.
+    </p>
+  </div>
+
+  <div className="mt-8 space-y-4">
+    {[
+      {
+        question: "What is MarkASingh.com?",
+        answer:
+          "MarkASingh.com is my professional platform, bringing together more than twenty-five years of experience across enterprise support, engineering collaboration, solutions engineering, cybersecurity, leadership, entrepreneurship, and AI-assisted business transformation. It documents the ideas, experiences, and business implementations that have shaped my approach to helping organizations understand complexity, create clarity, and confidently adopt new technologies.",
+      },
+      {
+        question: "Why build this platform?",
+        answer:
+          "As technology continues to evolve, so do the ways professionals share their experience. I wanted a place where my professional journey, public work, business ventures, and current exploration of AI could be presented together with the context needed to better understand how I think, how I work, and how I help organizations navigate change.",
+      },
+      {
+        question: "How does AI fit into your work?",
+        answer:
+          "I view AI as an execution multiplier rather than a replacement for expertise. It accelerates research, communication, documentation, workflow design, software development, and business operations while allowing people to spend more time applying judgment, experience, and strategic thinking. The goal is better decisions—not simply more automation.",
+      },
+      {
+        question: "Why are Gallivanting Travel and Mrs. Clean featured here?",
+        answer:
+          "These businesses demonstrate how the same principles can be applied across different industries. Each project begins with understanding the business problem, creating clarity, applying modern technology appropriately, and improving customer experiences. They serve as practical implementations of the ideas presented throughout this platform.",
+      },
+      {
+        question: "What is the common thread throughout your career?",
+        answer:
+          "The technologies have changed dramatically—from client/server infrastructure to cloud computing, cybersecurity, enterprise SaaS, and artificial intelligence. The underlying challenge has remained consistent: helping organizations understand complexity, align stakeholders, and confidently move toward better decisions.",
+      },
+      {
+        question: "Where is this work heading?",
+        answer:
+          "This platform documents an ongoing professional evolution. As AI becomes more deeply integrated into business workflows, my focus continues to be helping organizations combine human expertise with modern technology to improve customer engagement, business operations, and decision-making. Future initiatives continue building upon these same principles.",
+      },
+    ].map((item) => (
+      <details
+        key={item.question}
+        className="group rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 transition hover:border-cyan-500/60 hover:bg-cyan-950/20"
+      >
+        <summary className="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-white">
+          {item.question}
+
+          <span className="text-2xl font-light text-cyan-300 transition-transform duration-300 group-open:rotate-45">
+            +
+          </span>
+        </summary>
+
+        <p className="mt-5 max-w-4xl text-sm leading-7 text-slate-300">
+          {item.answer}
+        </p>
+      </details>
+    ))}
+  </div>
+</section>
+
 
         <section className="mx-auto mt-12 max-w-5xl border-t border-slate-800 pt-8">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
