@@ -2,8 +2,6 @@ import Link from "next/link";
 import SiteNav from "./components/SiteNav";
 
 export default function Home() {
-  const cardClass =
-    "h-full rounded-2xl border border-slate-800 bg-slate-900/70 p-6 transition hover:border-cyan-500/60 hover:bg-cyan-950/20";
 
   const calloutClass =
     "rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6";
@@ -65,172 +63,90 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-24">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
-              Technology Evolution
-            </p>
+<section className="mt-24 space-y-12">
+  {[
+    {
+      label: "Technology Lifecycle",
+      title: "Technology Changes. Human Challenges Don't.",
+      body:
+        "For more than twenty-five years, I have worked through multiple waves of technology transformation—from client/server infrastructure and web adoption to cloud services, cybersecurity modernization, and artificial intelligence.",
+      note:
+        "Each wave introduced new tools, architectures, and ways of working. The organizational challenge remained familiar: understanding complexity, aligning stakeholders, reducing ambiguity, and helping people move forward with confidence.",
+      stages: ["Client / Server", "Web", "Virtualization", "Cloud", "Cybersecurity", "AI"],
+      href: "/portfolio#technology-lifecycle",
+      cta: "Explore the Technology Lifecycle →",
+    },
+    {
+      label: "Product Lifecycle",
+      title: "A Career Built Across the Entire Lifecycle",
+      body:
+        "Twenty-two years inside an enterprise software company provided repeated exposure to how products move from vision to release, adoption, feedback, and continuous improvement.",
+      note:
+        "Rather than working from a single vantage point, I experienced the software lifecycle across support, leadership, engineering collaboration, QA, documentation, customer education, solutions engineering, and customer advocacy.",
+      stages: ["Customer Need", "Product Vision", "Engineering", "Release", "Customer Adoption", "Feedback"],
+      href: "/experience/professional-journey#product-lifecycle",
+      cta: "Explore the Product Lifecycle →",
+      closing:
+        "Seeing the entire lifecycle taught me that software succeeds through adoption, not deployment.",
+    },
+    {
+      label: "Organizational Lifecycle",
+      title: "Organizations Evolve Too.",
+      body:
+        "Technology initiatives succeed inside organizations, not in isolation. Throughout my career, I experienced business growth, acquisitions, reorganizations, leadership transitions, and organizational transformation from multiple perspectives.",
+      note:
+        "Those experiences reinforced that successful change depends on people, communication, leadership, and alignment as much as technical capability.",
+      stages: ["Growth", "Scaling", "Acquisition", "Integration", "Leadership", "Transformation"],
+      href: "/experience/professional-journey#organizational-lifecycle",
+      cta: "Explore the Organizational Lifecycle →",
+      closing:
+        "Helping organizations navigate change became just as important as helping them deploy technology.",
+    },
+  ].map((item) => (
+    <div key={item.label} className={calloutClass}>
+      <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
+        {item.label}
+      </p>
 
-            <h2 className="mb-6 text-3xl font-bold text-white">
-              Technology Changes. Human Challenges Don&apos;t.
-            </h2>
+      <h2 className="text-3xl font-bold text-white">{item.title}</h2>
 
-            <p className="max-w-4xl leading-relaxed text-slate-300">
-              For more than twenty-five years, I have worked through multiple
-              waves of technology transformation—from client/server
-              infrastructure and web adoption to cloud services, cybersecurity
-              modernization, and artificial intelligence.
-            </p>
+      <p className="mt-5 max-w-4xl text-lg font-semibold leading-8 text-white">
+        {item.body}
+      </p>
 
-            <p className="mt-4 max-w-4xl leading-relaxed text-slate-400">
-              Each wave introduced new tools, architectures, and ways of
-              working. The organizational challenge remained familiar:
-              understanding complexity, aligning stakeholders, reducing
-              ambiguity, and helping people move forward with confidence.
-            </p>
-          </section>
+      <p className="mt-5 max-w-4xl leading-relaxed text-slate-300">
+        {item.note}
+      </p>
 
-          <section className="mt-16">
-            <div className={calloutClass}>
-              <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
-                Product Lifecycle
-              </p>
+      <div className="mt-8 grid gap-4 md:grid-cols-6">
+        {item.stages.map((stage) => (
+          <div
+            key={stage}
+            className="rounded-xl border border-slate-700/70 bg-slate-950/70 p-4 text-sm font-semibold text-white"
+          >
+            {stage}
+          </div>
+        ))}
+      </div>
 
-              <h2 className="text-3xl font-bold text-white">
-                A Career Built Across the Entire{" "}
-                <span className="text-cyan-300">Lifecycle</span>
-              </h2>
+      {item.closing && (
+        <p className="mt-6 max-w-4xl leading-relaxed text-slate-300">
+          {item.closing}
+        </p>
+      )}
 
-              <p className="mt-5 max-w-4xl text-lg font-semibold leading-8 text-white">
-                Twenty-two years inside an enterprise software company provided
-                repeated exposure to how products move from vision to release,
-                adoption, feedback, and continuous improvement.
-              </p>
+      <div className="mt-6">
+        <Link
+          href={item.href}
+          className="inline-flex rounded-full border border-cyan-500/40 px-5 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-950/30 hover:text-white"
+        >
+          {item.cta}
+        </Link>
+      </div>
+    </div>
+  ))}
+</section>
 
-              <p className="mt-5 max-w-4xl leading-relaxed text-slate-300">
-                Rather than working from a single vantage point, I experienced
-                the software lifecycle across support, leadership, engineering
-                collaboration, QA, documentation, customer education, solutions
-                engineering, and customer advocacy.
-              </p>
-
-              <div className="mt-8 grid gap-4 md:grid-cols-6">
-                {[
-                  "Customer Problems",
-                  "Product Vision",
-                  "Engineering",
-                  "Release",
-                  "Customer Adoption",
-                  "Feedback",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-xl border border-slate-700/70 bg-slate-950/70 p-4 text-sm font-semibold text-white"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-
-              <p className="mt-6 max-w-4xl leading-relaxed text-slate-300">
-                Seeing the entire lifecycle taught me that software succeeds
-                through adoption, not deployment.
-              </p>
-
-              <div className="mt-6">
-                <Link
-                  href="/experience/professional-journey#product-lifecycle"
-                  className="inline-flex rounded-full border border-cyan-500/40 px-5 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-950/30 hover:text-white"
-                >
-                  Explore the Product Lifecycle →
-                </Link>
-              </div>
-            </div>
-          </section>
-
-          <section className="mt-24">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
-              Strategic Foundation
-            </p>
-
-            <h2 className="mb-6 text-3xl font-bold text-white">
-              The Themes That Define My Work
-            </h2>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <div className={cardClass}>
-                <h3 className="mb-4 text-xl font-semibold text-white">
-                  Customer Understanding
-                </h3>
-                <p className="leading-relaxed text-slate-400">
-                  Understanding operational challenges, customer priorities, and
-                  real-world outcomes through enterprise support, escalation
-                  leadership, and customer advocacy.
-                </p>
-              </div>
-
-              <div className={cardClass}>
-                <h3 className="mb-4 text-xl font-semibold text-white">
-                  Technical Translation
-                </h3>
-                <p className="leading-relaxed text-slate-400">
-                  Bridging customers, engineering, product teams, executives,
-                  and business stakeholders by turning complexity into shared
-                  understanding.
-                </p>
-              </div>
-
-              <div className={cardClass}>
-                <h3 className="mb-4 text-xl font-semibold text-white">
-                  Business Alignment
-                </h3>
-                <p className="leading-relaxed text-slate-400">
-                  Helping organizations connect technical capabilities with
-                  business objectives through solutions engineering, advisory
-                  conversations, and customer lifecycle guidance.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="mt-24">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-cyan-400">
-              Work in Action
-            </p>
-
-            <h2 className="mb-6 text-3xl font-bold text-white">
-              Real Business Problems. Practical Technology Application.
-            </h2>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              {[
-                [
-                  "AI in Practice",
-                  "Real-world examples of combining AI, modern technology, and human expertise to solve business problems.",
-                  "/experience",
-                ],
-                [
-                  "Professional Journey",
-                  "A deeper view of the career experiences that shaped my approach to technology, customers, and adoption.",
-                  "/experience/professional-journey",
-                ],
-                [
-                  "Evidence",
-                  "Public presentations, webinars, articles, and field work that support the professional narrative.",
-                  "/evidence",
-                ],
-              ].map(([title, desc, href]) => (
-                <Link key={href} href={href} className={cardClass}>
-                  <h3 className="mb-4 text-xl font-semibold text-white">
-                    {title}
-                  </h3>
-                  <p className="leading-relaxed text-slate-400">{desc}</p>
-                  <p className="mt-5 text-sm font-semibold text-cyan-300">
-                    Explore →
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </section>
 
           <section className="mt-24">
             <div className={calloutClass}>

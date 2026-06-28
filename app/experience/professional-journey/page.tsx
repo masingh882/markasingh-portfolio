@@ -653,7 +653,130 @@ export default function ProfessionalJourneyPage() {
   </div>
 </section>
 
+<section
+  id="organizational-lifecycle"
+  className="mx-auto mt-16 max-w-5xl scroll-mt-28"
+>
+  <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+      Organizational Lifecycle
+    </p>
 
+    <h2 className="text-3xl font-bold text-white">
+      A Perspective Shaped by How{" "}
+      <span className="text-cyan-300">Organizations Change</span>
+    </h2>
+
+    <p className="mt-5 max-w-4xl text-xl font-semibold leading-8 text-white">
+      Technology succeeds inside organizations, not in isolation. Across my
+      career, I experienced growth, scaling, acquisitions, reorganizations,
+      leadership transitions, and business transformation from multiple
+      perspectives.
+    </p>
+
+    <p className="mt-5 max-w-4xl text-sm leading-7 text-slate-300">
+      Those experiences taught me that organizational change is often the hidden
+      work behind successful technology adoption. New products, new platforms,
+      new leadership structures, and new business priorities all create moments
+      where people need clarity, communication, alignment, and confidence.
+    </p>
+  </div>
+
+  <div className="mt-10 rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6">
+    <p className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
+Patterns of Organizational Change
+    </p>
+
+    <div className="grid gap-4 md:grid-cols-2">
+      {[
+        [
+          "Growth",
+          "Teams expand, responsibilities shift, and informal practices need structure.",
+        ],
+        [
+          "Scaling",
+          "Processes, communication, onboarding, and support readiness become essential.",
+        ],
+        [
+          "Acquisitions",
+          "New products, teams, customers, and operational realities enter the organization.",
+        ],
+        [
+          "Integration",
+          "People, systems, workflows, and expectations need to be aligned.",
+        ],
+        [
+          "Reorganization",
+          "Teams adapt to new reporting structures, priorities, and business direction.",
+        ],
+        [
+          "Leadership",
+          "Managers help people navigate uncertainty while keeping work focused and productive.",
+        ],
+        [
+          "Transformation",
+          "Organizations adopt new technologies, operating models, and customer expectations.",
+        ],
+        [
+          "Continuous Evolution",
+          "The organization learns, adjusts, and prepares for the next wave of change.",
+        ],
+      ].map(([title, text], index) => (
+        <div
+          key={title}
+          className="rounded-2xl border border-slate-700/70 bg-[#020617] p-5 transition hover:border-cyan-500/60 hover:bg-cyan-950/20"
+        >
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+            {String(index + 1).padStart(2, "0")}
+          </p>
+
+          <h3 className="text-lg font-bold text-white">{title}</h3>
+
+          <p className="mt-3 text-sm leading-6 text-slate-300">{text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-3">
+    {[
+      [
+        "Organizations absorb change unevenly.",
+        "New tools, acquisitions, leadership changes, and process shifts affect teams differently depending on role, readiness, and context.",
+      ],
+      [
+        "Leadership creates stability.",
+        "During growth and transition, people need clear communication, consistent expectations, and confidence in the path forward.",
+      ],
+      [
+        "Transformation depends on alignment.",
+        "Successful change requires connecting technology decisions with people, process, customer impact, and business outcomes.",
+      ],
+    ].map(([title, text]) => (
+      <div
+        key={title}
+        className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6"
+      >
+        <h3 className="text-lg font-bold text-white">{title}</h3>
+        <p className="mt-3 text-sm leading-6 text-slate-300">{text}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="mt-10 rounded-2xl border border-cyan-500/30 bg-cyan-950/20 p-6">
+    <p className="text-sm leading-7 text-slate-300">
+      The organizational lifecycle became the other side of the product
+      lifecycle. Products evolve through vision, engineering, release, adoption,
+      and feedback. Organizations evolve through growth, integration,
+      leadership, transformation, and adaptation.
+    </p>
+
+    <p className="mt-5 text-lg font-semibold leading-8 text-white">
+      Seeing both sides taught me that technology transformation is ultimately a
+      people, product, and organizational alignment challenge.
+    </p>
+  </div>
+</section>
 
         <section className="mx-auto mt-12 max-w-5xl">
           <div className="rounded-2xl border border-slate-700/70 bg-slate-900/70 p-6 shadow-xl shadow-black/20">
