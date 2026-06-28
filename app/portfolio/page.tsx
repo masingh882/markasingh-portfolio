@@ -107,7 +107,7 @@ return (
 <section className="mx-auto mt-24 max-w-5xl">
   <div className="mb-12">
     <p className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
-      Technology Evolution
+      Technology Lifecycle
     </p>
 
 <h2 className="mt-3 text-4xl font-bold tracking-tight text-white">

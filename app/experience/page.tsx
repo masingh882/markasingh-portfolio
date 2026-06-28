@@ -92,7 +92,7 @@ export default function ExperiencePage() {
       <main className="min-h-screen bg-[#020617] px-6 py-32 text-slate-100">
         <section className="mx-auto max-w-5xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400">
-            Experience
+            Case Studies
           </p>
 
 <h1 className="max-w-4xl text-5xl font-bold tracking-tight sm:text-6xl">
@@ -106,7 +106,7 @@ export default function ExperiencePage() {
 </p>
 
           <p className="mt-6 max-w-4xl text-base leading-7 text-slate-300">
-Technology changes rapidly. Business value still depends on understanding the problem, creating clarity, and executing with discipline. Throughout my career, I have helped organizations navigate successive waves of technology transformation—from enterprise infrastructure and observability to cybersecurity, cloud, customer engagement, and now AI-assisted business workflows.
+Today&apos;s technology landscape is shaped by AI, but the challenge remains the same: understanding the problem before implementing the solution. Business value still depends on understanding the problem, creating clarity, and executing with discipline. Throughout my career, I have helped organizations navigate successive waves of technology transformation—from enterprise infrastructure and observability to cybersecurity, cloud, customer engagement, and now AI-assisted business workflows.
           </p>
 
           <p className="mt-4 max-w-4xl text-base leading-7 text-slate-300">
@@ -124,7 +124,7 @@ Technology changes rapidly. Business value still depends on understanding the pr
             </p>
 
             <h2 className="text-2xl font-bold text-white">
-              Three Business Problems. One Consistent Philosophy.
+              Three Innitiatives. One Consistent Philosophy.
             </h2>
 
             <p className="mt-4 max-w-4xl text-sm leading-6 text-slate-300">
